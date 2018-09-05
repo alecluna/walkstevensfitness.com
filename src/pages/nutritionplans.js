@@ -8,7 +8,7 @@ export default class Nutritionplans extends Component {
   render() {
     return (
       <div>
-        <Card>
+        <Card style={{ width: '354' }}>
           <CardContent>
             <Typography>
               <Link to="/courses"> Back Button here </Link>

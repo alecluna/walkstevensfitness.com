@@ -5,12 +5,13 @@ import Card from '../../node_modules/@material-ui/core/Card'
 import Typography from '../../node_modules/@material-ui/core/Typography'
 import CardContent from '../../node_modules/@material-ui/core/CardContent'
 import CardMedia from '../../node_modules/@material-ui/core/CardMedia'
-
 class Courses extends Component {
   render() {
     const styles = {
       card: {
-        minWidth: 275
+        maxWidth: 345,
+        alignSelf: 'center',
+        margin: '30px'
       },
       bullet: {
         display: 'inline-block',
@@ -23,45 +24,51 @@ class Courses extends Component {
       },
       pos: {
         marginBottom: 12
+      },
+      links: {
+        color: 'black',
+        textDecoration: 'none',
+        fontFamily: 'Roboto',
+        fontSize: '28px'
       }
     }
     return (
       <div>
         <h1>Courses Page</h1>
         <TextContent />
-        <CardMedia image="https://picsum.photos/200/300" />
-        <Card style={styles.card}>
-          <CardContent>
-            <Typography style={styles.title}>
-              <Link
-                to="/workoutplans"
-                style={{
-                  color: 'blue',
-                  textDecoration: 'none',
-                  fontFamily: 'Roboto'
-                }}
-              >
-                Workout Plans
-              </Link>
-            </Typography>
-          </CardContent>
-        </Card>
-        <Card style={styles.card}>
-          <CardContent>
-            <Typography style={styles.title}>
-              <Link
-                to="/nutritionplans"
-                style={{
-                  color: 'blue',
-                  textDecoration: 'none',
-                  fontFamily: 'Roboto'
-                }}
-              >
-                Nutrition Plans
-              </Link>
-            </Typography>
-          </CardContent>
-        </Card>
+        <div
+          class="card-container"
+          style={{
+            display: 'inline-flex'
+          }}
+        >
+          <Card style={styles.card}>
+            <CardMedia
+              component="img"
+              image={'https://picsum.photos/345/345'}
+            />
+            <CardContent>
+              <Typography style={styles.title}>
+                <Link to="/workoutplans" style={styles.links}>
+                  Workout Plans
+                </Link>
+              </Typography>
+            </CardContent>
+          </Card>
+          <Card style={styles.card}>
+            <CardMedia
+              component="img"
+              image={'https://picsum.photos/344/345'}
+            />
+            <CardContent>
+              <Typography style={styles.title}>
+                <Link to="/nutritionplans" style={styles.links}>
+                  Nutrition Plans
+                </Link>
+              </Typography>
+            </CardContent>
+          </Card>
+        </div>
       </div>
     )
   }
