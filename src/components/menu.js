@@ -1,38 +1,94 @@
 import React, { Component } from 'react'
 import Link from 'gatsby-link'
 import '../layouts/index.css'
+import Typography from '../../node_modules/@material-ui/core/Typography'
 
+const styles = {
+  listSpacing: {
+    marginTop: '1000px'
+  },
+  listBorder: {
+    borderBottom: '.5px solid slategrey'
+  }
+}
+
+const Border = () => <div style={styles.listBorder} />
 class Menu extends Component {
   render() {
     return (
       <div
         style={{
+          marginTop: '90px',
           marginLeft: '20px',
-          marginRight: '20px'
+          marginRight: '20px',
+          fontColor: 'black'
         }}
       >
+        <Typography
+          variant="display3"
+          style={{
+            textDecoration: 'none',
+            fontSize: '20px',
+            fontWeight: '700',
+            color: 'hsl(0,0%,13%)'
+          }}
+        >
+          Menu
+        </Typography>
+        <Border />
         <ul
           style={{
             fontFamily: 'Roboto',
             listStyleType: 'none',
-            display: 'flex',
-            justifyContent: 'space-evenly',
-            borderBottom: '.5px solid slategrey'
+            marginTop: '20px'
           }}
         >
           <li>
-            <Link to="/">Home</Link>
+            <Link
+              style={{
+                textDecoration: 'none',
+                color: 'black'
+              }}
+              to="/"
+            >
+              Home
+            </Link>
           </li>
           <li>
-            <Link to="/clients">Client Testimonies</Link>
+            <Link
+              style={{
+                textDecoration: 'none',
+                color: 'black'
+              }}
+              to="/clients"
+            >
+              Client Testimonies
+            </Link>
           </li>
           <li>
-            <Link to="/howtos">How To's</Link>
+            <Link
+              style={{
+                textDecoration: 'none',
+                color: 'black'
+              }}
+              to="/howtos"
+            >
+              How To's
+            </Link>
           </li>
           <li>
-            <Link to="courses">Courses </Link>
+            <Link
+              style={{
+                textDecoration: 'none',
+                color: 'black'
+              }}
+              to="courses"
+            >
+              Courses
+            </Link>
           </li>
         </ul>
+        <Border />
       </div>
     )
   }
