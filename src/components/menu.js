@@ -30,7 +30,8 @@ class Menu extends Component {
             textDecoration: 'none',
             fontSize: '20px',
             fontWeight: '700',
-            color: 'hsl(0,0%,13%)'
+            color: 'hsl(0,0%,13%)',
+            marginBottom: '10px'
           }}
         >
           Menu

@@ -44,7 +44,14 @@ class Header extends React.Component {
                 <Menu />
               </div>
             </Drawer>
-            <Typography style={{ marginLeft: '20px' }}>
+            <Typography
+              variant="title"
+              style={{
+                color: 'black',
+                textDecoration: 'none',
+                marginLeft: '20px'
+              }}
+            >
               <Link to="/" style={{ color: 'primary', textDecoration: 'none' }}>
                 WalkStevensFit
               </Link>
