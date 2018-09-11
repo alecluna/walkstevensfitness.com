@@ -1,10 +1,6 @@
 import React, { Component } from 'react'
 import TextContent from '../components/TextContent'
-import Link from 'gatsby-link'
-import Card from '../../node_modules/@material-ui/core/Card'
-import Typography from '../../node_modules/@material-ui/core/Typography'
-import CardContent from '../../node_modules/@material-ui/core/CardContent'
-import CardMedia from '../../node_modules/@material-ui/core/CardMedia'
+import CardComponent from '../components/CardComponent'
 class Courses extends Component {
   render() {
     const styles = {
@@ -17,10 +13,6 @@ class Courses extends Component {
         display: 'inline-block',
         margin: '0 2px',
         transform: 'scale(0.8)'
-      },
-      title: {
-        marginBottom: 16,
-        fontSize: 14
       },
       pos: {
         marginBottom: 12
@@ -37,37 +29,13 @@ class Courses extends Component {
         <h1>Courses Page</h1>
         <TextContent />
         <div
-          class="card-container"
+          className="card-container"
           style={{
             display: 'inline-flex'
           }}
         >
-          <Card style={styles.card}>
-            <CardMedia
-              component="img"
-              image={'https://picsum.photos/345/345'}
-            />
-            <CardContent>
-              <Typography style={styles.title}>
-                <Link to="/workoutplans" style={styles.links}>
-                  Workout Plans
-                </Link>
-              </Typography>
-            </CardContent>
-          </Card>
-          <Card style={styles.card}>
-            <CardMedia
-              component="img"
-              image={'https://picsum.photos/344/345'}
-            />
-            <CardContent>
-              <Typography style={styles.title}>
-                <Link to="/nutritionplans" style={styles.links}>
-                  Nutrition Plans
-                </Link>
-              </Typography>
-            </CardContent>
-          </Card>
+          <CardComponent text="Work Out Plans" linkto="/workoutplans" />
+          <CardComponent text="Nutrition Plans" linkto="/nutritionplans" />
         </div>
       </div>
     )
