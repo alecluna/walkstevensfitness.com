@@ -15,10 +15,10 @@ const styles = {
   }
 }
 class Header extends React.Component {
-  state = { left: false }
+  state = { open: false }
 
   toggleDrawer = () => {
-    this.setState({ left: !this.state.left })
+    this.setState({ open: !this.state.open })
   }
   render() {
     return (
@@ -35,7 +35,7 @@ class Header extends React.Component {
             <IconButton color="primary" aria-label="Menu">
               <MenuIcon onClick={this.toggleDrawer} />
             </IconButton>
-            <Drawer open={this.state.left} onClose={this.toggleDrawer}>
+            <Drawer open={this.state.open} onClose={this.toggleDrawer}>
               <div
                 role="button"
                 onClick={this.toggleDrawer}

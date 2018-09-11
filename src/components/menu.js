@@ -4,9 +4,6 @@ import '../layouts/index.css'
 import Typography from '../../node_modules/@material-ui/core/Typography'
 
 const styles = {
-  listSpacing: {
-    marginTop: '1000px'
-  },
   listBorder: {
     borderBottom: '.5px solid slategrey'
   }
