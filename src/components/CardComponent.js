@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import PropTypes from 'prop-types'
 import Card from '@material-ui/core/Card'
 import Typography from '@material-ui/core/Typography'
 import CardContent from '@material-ui/core/CardContent'
@@ -8,13 +7,19 @@ import Link from 'gatsby-link'
 
 const styles = {
   card: {
-    maxWidth: 345,
+    maxWidth: 500,
     alignSelf: 'center',
     margin: '30px'
   },
   title: {
     marginBottom: 16,
     fontSize: 14
+  },
+  links: {
+    color: 'black',
+    textDecoration: 'none',
+    fontFamily: 'Roboto',
+    fontSize: '28px'
   }
 }
 
@@ -26,7 +31,7 @@ export default class CardComponent extends Component {
           <Card style={styles.card}>
             <CardMedia
               component="img"
-              image={'https://picsum.photos/345/345'}
+              image={'https://picsum.photos/400/400'}
             />
             <CardContent>
               <Typography gutterBottom variant="headline" component="h2">
