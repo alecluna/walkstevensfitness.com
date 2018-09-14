@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import TextContent from '../components/TextContent'
 import CardComponent from '../components/CardComponent'
-
 class HowTos extends Component {
   render() {
     return (
@@ -10,9 +9,10 @@ class HowTos extends Component {
         <TextContent />
         <div
           style={{
-            display: 'inline-flex',
-            justifyContent: 'space-around',
-            flexWrap: 'wrap'
+            display: 'flex',
+            flexWrap: 'wrap',
+            justifyContent: 'center',
+            flexDirection: 'row'
           }}
         >
           <CardComponent text="Legs" />

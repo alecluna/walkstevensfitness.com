@@ -22,7 +22,6 @@ const styles = {
     fontSize: '28px'
   }
 }
-
 export default class CardComponent extends Component {
   render() {
     return (
@@ -31,7 +30,7 @@ export default class CardComponent extends Component {
           <Card style={styles.card}>
             <CardMedia
               component="img"
-              image={'https://picsum.photos/400/400'}
+              image={'https://picsum.photos/394/394'}
             />
             <CardContent>
               <Typography gutterBottom variant="headline" component="h2">
