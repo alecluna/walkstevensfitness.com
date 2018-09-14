@@ -5,7 +5,7 @@ export default class TextContent extends Component {
   render() {
     return (
       <div>
-        <Typography variant="body2">
+        <Typography style={{ textAlign: 'center' }} variant="body2">
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
           minim veniam, quis nostrud exercitation ullamco laboris nisi ut

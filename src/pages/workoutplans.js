@@ -3,11 +3,12 @@ import Link from 'gatsby-link'
 import Card from '@material-ui/core/Card'
 import CardContent from '@material-ui/core/CardContent'
 import Typography from '@material-ui/core/Typography'
-
+import TitleComponent from '../components/TitleComponent'
 export default class Workoutplans extends Component {
   render() {
     return (
       <div>
+        <TitleComponent title="Workout Plans" />
         <Card>
           <CardContent>
             <Typography>

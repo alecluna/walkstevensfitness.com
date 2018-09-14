@@ -1,8 +1,9 @@
 import React from 'react'
+import TitleComponent from '../components/TitleComponent'
 
 const NotFoundPage = () => (
   <div>
-    <h1>NOT FOUND</h1>
+    <TitleComponent title="NOT FOUND" />
     <p>Woops! You just hit a route that doesn&#39;t exist... the sadness.</p>
   </div>
 )

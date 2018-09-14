@@ -1,11 +1,12 @@
 import React from 'react'
-import Link from 'gatsby-link'
 import TextContent from '../components/TextContent'
+import TitleComponent from '../components/TitleComponent'
+import Typography from '../../node_modules/@material-ui/core/Typography'
 
 const IndexPage = () => (
   <div>
-    <h1>Welcome to WalkStevensFitness</h1>
-    <p>This is the home page</p>
+    <TitleComponent title="Welcome to WalkStevensFitness" />
+    <Typography>This is the home page</Typography>
     <TextContent />
   </div>
 )

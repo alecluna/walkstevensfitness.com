@@ -1,11 +1,11 @@
 import React, { Component } from 'react'
 import TextContent from '../components/TextContent'
-
+import TitleComponent from '../components/TitleComponent'
 class Clients extends Component {
   render() {
     return (
       <div>
-        <h1>Client Testimonies</h1>
+        <TitleComponent title="Client Testimonies" />
         <TextContent />
       </div>
     )
