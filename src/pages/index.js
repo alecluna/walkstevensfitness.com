@@ -1,14 +1,47 @@
-import React from 'react'
+import React, { Component } from 'react'
 import TextContent from '../components/TextContent'
-import TitleComponent from '../components/TitleComponent'
 import Typography from '../../node_modules/@material-ui/core/Typography'
+import Card from '../../node_modules/@material-ui/core/Card'
+import CardContent from '../../node_modules/@material-ui/core/CardContent'
+import Hero from '../components/Hero'
+import PopUpDialogue from '../components/PopUpDialogue'
 
-const IndexPage = () => (
-  <div>
-    <TitleComponent title="Welcome to WalkStevensFitness" />
-    <Typography>This is the home page</Typography>
-    <TextContent />
-  </div>
-)
+const clientTestimonies = 'This is a client Testimony'
+export default class IndexPage extends Component {
+  componentDidMount() {
+    setTimeout(this._popUpDialogue(), 10000)
+  }
 
-export default IndexPage
+  _popUpDialogue() {
+    console.log('pop up fired')
+    return (
+      <div>
+        <PopUpDialogue />
+      </div>
+    )
+  }
+
+  render() {
+    return (
+      <div>
+        <Hero />
+        <div
+          style={{
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center',
+            marginTop: '10%'
+          }}
+        >
+          <Card style={{ width: '75%' }}>
+            <CardContent style={{ padding: '30px' }}>
+              <Typography gutterBottom variant="headline" component="h2">
+                <TextContent />
+              </Typography>
+            </CardContent>
+          </Card>
+        </div>
+      </div>
+    )
+  }
+}
