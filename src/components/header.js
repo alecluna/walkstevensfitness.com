@@ -22,7 +22,7 @@ class Header extends React.Component {
   }
   render() {
     return (
-      <div style={{ background: '#FFFFFF', marginBottom: '1.45rem' }}>
+      <div style={{ marginBottom: '1.45rem' }}>
         <AppBar
           position="static"
           style={{
