@@ -6,14 +6,22 @@ import DialogContentText from '@material-ui/core/DialogContentText'
 import DialogTitle from '@material-ui/core/DialogTitle'
 
 export default class PopUpDialogue extends Component {
+  constructor(props) {
+    super(props)
+  }
+  _handleClose = () => {
+    this.setState({ open: false })
+  }
+
   render() {
     return (
       <div>
         <Dialog
-          open={this.state.open}
-          onClose={this.handleClose}
+          onOpen={this.props.open}
+          onClose={this._handleClose}
           aria-labelledby="form-dialog-title"
         >
+          {console.log(this.props.open)}
           <DialogTitle id="form-dialog-title">Subscribe</DialogTitle>
           <DialogContent>
             <DialogContentText>
@@ -30,11 +38,8 @@ export default class PopUpDialogue extends Component {
             />
           </DialogContent>
           <DialogActions>
-            <Button onClick={this.handleClose} color="primary">
+            <Button onClick={this._handleClose} color="primary">
               Cancel
-            </Button>
-            <Button onClick={this.handleClose} color="primary">
-              Subscribe
             </Button>
           </DialogActions>
         </Dialog>

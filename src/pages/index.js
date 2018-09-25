@@ -6,17 +6,27 @@ import CardContent from '../../node_modules/@material-ui/core/CardContent'
 import Hero from '../components/Hero'
 import PopUpDialogue from '../components/PopUpDialogue'
 
-const clientTestimonies = 'This is a client Testimony'
+//const clientTestimonies = 'This is a client Testimony'
 export default class IndexPage extends Component {
+  constructor() {
+    super()
+  }
+
   componentDidMount() {
-    setTimeout(this._popUpDialogue(), 10000)
+    setInterval(this._popUpDialogue(), 5000)
   }
 
   _popUpDialogue() {
-    console.log('pop up fired')
+    setTimeout(() => {
+      this._delayPopUp()
+    }, 2000)
+  }
+
+  _delayPopUp() {
+    console.log('pop up fired at 2 seconds')
     return (
       <div>
-        <PopUpDialogue />
+        <PopUpDialogue open="true" />
       </div>
     )
   }
