@@ -34,7 +34,7 @@ export default class IndexPage extends Component {
   render() {
     return (
       <div>
-        <Hero />
+        <Hero text="Welcome to WalkStevenFitness" />
         <div
           style={{
             display: 'flex',

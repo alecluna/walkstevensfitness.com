@@ -2,14 +2,8 @@ import React, { Component } from 'react'
 import Link from 'gatsby-link'
 import '../layouts/index.css'
 import Typography from '../../node_modules/@material-ui/core/Typography'
+import Border from '../components/Border'
 
-const styles = {
-  listBorder: {
-    borderBottom: '.5px solid slategrey'
-  }
-}
-
-const Border = () => <div style={styles.listBorder} />
 class Menu extends Component {
   render() {
     return (

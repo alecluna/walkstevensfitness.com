@@ -2,6 +2,8 @@ import React, { Component } from 'react'
 import Typography from '../../node_modules/@material-ui/core/Typography'
 
 const TitleComponent = props => (
-  <Typography variant="display3"> {props.title}</Typography>
+  <Typography style={{ color: 'black' }} variant="display1">
+    {props.title}
+  </Typography>
 )
 export default TitleComponent
