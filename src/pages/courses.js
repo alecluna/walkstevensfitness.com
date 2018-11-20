@@ -3,18 +3,26 @@ import TextContent from '../components/TextContent'
 import CardComponent from '../components/CardComponent'
 import TitleComponent from '../components/TitleComponent'
 import Footer from '../components/Footer'
+import Hero from '../components/Hero'
+import Border from '../components/Border'
 
 class Courses extends Component {
   render() {
     return (
       <div>
-        <TitleComponent title="Courses" />
+        <Hero text="Plans" />
+        <section
+          style={{ marginTop: '5%', fontSize: '3em', fontWeight: '200' }}
+        >
+          <TextContent text="Workout and Nutritional Plans" />
+        </section>
+        <Border />
         <TextContent />
         <div
           className="card-container"
           style={{
-            display: 'inline-flex',
-            justifyContent: 'space-around',
+            display: 'flex',
+            justifyContent: 'center',
             flexWrap: 'wrap'
           }}
         >
