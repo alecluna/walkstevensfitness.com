@@ -22,7 +22,10 @@ export default function Footer() {
   return (
     <div style={{ marginTop: '10%' }}>
       <section style={styles.footerDemensions}>
-        <Typography> Contact Me:</Typography>
+        <div>
+          <Typography style={{ color: 'white' }}> Contact Me:</Typography>
+          <Typography style={{ color: 'white' }}> 916-555-55555</Typography>
+        </div>
         <div
           style={{
             width: '200px',

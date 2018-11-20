@@ -7,6 +7,7 @@ import CardContent from '../../node_modules/@material-ui/core/CardContent'
 import Hero from '../components/Hero'
 import PopUpDialogue from '../components/PopUpDialogue'
 import Image from '../components/Image'
+import Border from '../components/Border'
 
 const styles = {
   section: {
@@ -60,6 +61,7 @@ export default class IndexPage extends Component {
         >
           <TextContent text="What I Do" />
         </section>
+        <Border />
         <section style={styles.section}>
           <div style={{ maxWidth: '50%', marginRight: '5%' }}>
             <Image />

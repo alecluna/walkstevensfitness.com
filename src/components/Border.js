@@ -2,7 +2,10 @@ import React from 'react'
 
 const styles = {
   listBorder: {
-    borderBottom: '.5px solid slategrey'
+    display: 'flex',
+    justifyContent: 'center',
+    marginTop: '10px',
+    borderBottom: '1px solid slategrey'
   }
 }
 
