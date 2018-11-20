@@ -24,7 +24,7 @@ class Header extends React.Component {
   render() {
     return (
       <div>
-        <AppBar position="static">
+        <AppBar position="static" color="white">
           <Toolbar variant="dense">
             <IconButton color="primary" aria-label="Menu">
               <MenuIcon onClick={this.toggleDrawer} />
@@ -46,7 +46,7 @@ class Header extends React.Component {
                 marginLeft: '20px'
               }}
             >
-              <Link to="/" style={{ color: 'primary', textDecoration: 'none' }}>
+              <Link to="/" style={{ color: 'black', textDecoration: 'none' }}>
                 WalkStevensFit
               </Link>
             </Typography>
