@@ -5,6 +5,7 @@ import Card from '../../node_modules/@material-ui/core/Card'
 import CardContent from '../../node_modules/@material-ui/core/CardContent'
 import Hero from '../components/Hero'
 import PopUpDialogue from '../components/PopUpDialogue'
+import Image from '../components/Image'
 
 //const clientTestimonies = 'This is a client Testimony'
 export default class IndexPage extends Component {
@@ -38,18 +39,28 @@ export default class IndexPage extends Component {
         <div
           style={{
             display: 'flex',
-            justifyContent: 'center',
-            alignItems: 'center',
-            marginTop: '10%'
+            flexDirection: 'row',
+            justifyContent: 'space-around',
+            flexWrap: 'wrap',
+            margin: '10%'
           }}
         >
-          <Card style={{ width: '75%' }}>
-            <CardContent style={{ padding: '30px' }}>
-              <Typography gutterBottom variant="headline" component="h2">
-                <TextContent />
-              </Typography>
-            </CardContent>
-          </Card>
+          <div
+            style={{
+              maxWidth: '50%',
+              marginRight: '20px'
+            }}
+          >
+            <Image />
+          </div>
+          <div
+            style={{
+              maxWidth: '50%',
+              marginTop: '5%'
+            }}
+          >
+            <TextContent />
+          </div>
         </div>
       </div>
     )

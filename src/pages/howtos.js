@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import TextContent from '../components/TextContent'
 import CardComponent from '../components/CardComponent'
 import TitleComponent from '../components/TitleComponent'
+
 class HowTos extends Component {
   render() {
     return (

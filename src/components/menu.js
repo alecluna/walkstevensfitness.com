@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import Link from 'gatsby-link'
 import '../layouts/index.css'
 import Typography from '../../node_modules/@material-ui/core/Typography'
-import Border from '../components/Border'
+import Border from './Border'
 
 class Menu extends Component {
   render() {

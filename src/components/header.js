@@ -6,7 +6,7 @@ import Link from 'gatsby-link'
 import IconButton from '@material-ui/core/IconButton'
 import MenuIcon from '@material-ui/icons/Menu'
 import Drawer from '@material-ui/core/Drawer'
-import Menu from '../components/menu'
+import Menu from './Menu'
 
 const styles = {
   menuButton: {
@@ -14,6 +14,7 @@ const styles = {
     marginRight: 20
   }
 }
+
 class Header extends React.Component {
   state = { open: false }
 
@@ -22,15 +23,8 @@ class Header extends React.Component {
   }
   render() {
     return (
-      <div style={{ marginBottom: '1.45rem' }}>
-        <AppBar
-          position="static"
-          style={{
-            margin: '0 auto',
-            padding: '1.45rem 1.0875rem',
-            backgroundColor: 'white'
-          }}
-        >
+      <div>
+        <AppBar position="static">
           <Toolbar variant="dense">
             <IconButton color="primary" aria-label="Menu">
               <MenuIcon onClick={this.toggleDrawer} />

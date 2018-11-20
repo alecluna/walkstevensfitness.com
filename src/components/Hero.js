@@ -4,6 +4,7 @@ import Paper from '../../node_modules/@material-ui/core/Paper'
 
 const styles = {
   background: {
+    backgroundColor: '#484848',
     height: '70vh',
     display: 'flex',
     justifyContent: 'center',
