@@ -22,6 +22,7 @@ const styles = {
     fontSize: '28px'
   }
 }
+
 export default class CardComponent extends Component {
   render() {
     return (

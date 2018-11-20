@@ -12,7 +12,7 @@ class Courses extends Component {
       <div>
         <Hero text="Plans" />
         <section
-          style={{ marginTop: '5%', fontSize: '3em', fontWeight: '200' }}
+          style={{ marginTop: '10%', fontSize: '3em', fontWeight: '200' }}
         >
           <TextContent text="Workout and Nutritional Plans" />
         </section>

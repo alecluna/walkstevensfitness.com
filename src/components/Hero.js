@@ -6,14 +6,15 @@ import Border from '../components/Border'
 const styles = {
   background: {
     backgroundColor: '#484848',
-    height: '70vh',
+    height: '40vh',
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center'
   },
   paperStyle: {
     height: '60%',
-    width: '80%'
+    width: '80%',
+    marginTop: '15%'
   }
 }
 

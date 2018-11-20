@@ -24,7 +24,7 @@ class Clients extends Component {
       <div>
         <Hero text="Client Testimonies" />
         <section
-          style={{ marginTop: '5%', fontSize: '3em', fontWeight: '200' }}
+          style={{ marginTop: '10%', fontSize: '3em', fontWeight: '200' }}
         >
           <TextContent text="What Clients Are Saying" />
         </section>
