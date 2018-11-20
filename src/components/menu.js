@@ -22,7 +22,8 @@ class Menu extends Component {
             fontSize: '20px',
             fontWeight: '700',
             color: 'hsl(0,0%,13%)',
-            marginBottom: '10px'
+            marginBottom: '10px',
+            marginLeft: '1em'
           }}
         >
           Menu

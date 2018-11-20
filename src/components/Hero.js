@@ -25,8 +25,8 @@ export default class Hero extends Component {
         <Paper style={styles.paperStyle} elevation={11}>
           <div style={{ textAlign: 'center', marginTop: '50px' }}>
             <Typography
-              variant="display2"
-              style={{ color: 'black', fontWeight: '200' }}
+              variant="display4"
+              style={{ color: 'black', fontWeight: '200', fontSize: '2em' }}
             >
               {this.props.text}
             </Typography>

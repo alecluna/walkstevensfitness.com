@@ -1,18 +1,17 @@
 import React from 'react'
 
-const styles = {
-  listBorder: {
-    display: 'flex',
-    justifyContent: 'center',
-    marginTop: '10px',
-    borderBottom: '1px solid slategrey'
-  }
-}
-
 export default function Border() {
   return (
     <div>
-      <div style={styles.listBorder} />
+      <hr
+        style={{
+          marginTop: '15px',
+          color: 'slategrey',
+          width: '50%',
+          marginLeft: '25%',
+          marginRight: '25%'
+        }}
+      />
     </div>
   )
 }
