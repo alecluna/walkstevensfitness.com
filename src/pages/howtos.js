@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import TextContent from '../components/TextContent'
 import CardComponent from '../components/CardComponent'
 import TitleComponent from '../components/TitleComponent'
+import Footer from '../components/Footer'
 
 class HowTos extends Component {
   render() {
@@ -23,6 +24,7 @@ class HowTos extends Component {
           <CardComponent text="Shoulders" linkto="/MuscleGroups/Shoulders" />
           <CardComponent text="Core" linkto="/MuscleGroups/Core" />
         </div>
+        <Footer />
       </div>
     )
   }

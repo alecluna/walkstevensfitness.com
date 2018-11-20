@@ -4,6 +4,8 @@ import Card from '@material-ui/core/Card'
 import CardContent from '@material-ui/core/CardContent'
 import Typography from '@material-ui/core/Typography'
 import TitleComponent from '../components/TitleComponent'
+import Footer from '../components/Footer'
+
 export default class Workoutplans extends Component {
   render() {
     return (
@@ -19,6 +21,7 @@ export default class Workoutplans extends Component {
             </Typography>
           </CardContent>
         </Card>
+        <Footer />
       </div>
     )
   }

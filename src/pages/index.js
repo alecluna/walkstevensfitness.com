@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import TextContent from '../components/TextContent'
+import Footer from '../components/Footer'
 import Typography from '../../node_modules/@material-ui/core/Typography'
 import Card from '../../node_modules/@material-ui/core/Card'
 import CardContent from '../../node_modules/@material-ui/core/CardContent'
@@ -75,6 +76,7 @@ export default class IndexPage extends Component {
             <Image />
           </div>
         </section>
+        <Footer />
       </div>
     )
   }
