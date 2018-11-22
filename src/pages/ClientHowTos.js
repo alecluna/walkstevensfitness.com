@@ -1,9 +1,8 @@
 import React from 'react'
-import Hero from '../../components/Hero'
-import CardComponent from '../../components/CardComponent'
+import CardComponent from '../components/CardComponent'
 
 export default function ClientHowTos() {
-  const muscleGroups = ['biceps', 'triceps', 'shoulders', 'core', 'legs']
+  const muscleGroups = ['Biceps', 'Triceps', 'Shoulders', 'Core', 'Legs']
   return (
     <div
       style={{

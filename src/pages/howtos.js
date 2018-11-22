@@ -24,14 +24,8 @@ class HowTos extends Component {
             flexDirection: 'row'
           }}
         >
-          <CardComponent
-            text="For Clients"
-            linkto="/ForClients/ClientHowTos/"
-          />
-          <CardComponent
-            text="For Trainers"
-            linkto="/ForTrainers/ForTrainersHowTos/"
-          />
+          <CardComponent text="For Clients" linkto="/ClientHowTos/" />
+          <CardComponent text="For Trainers" linkto="/ForTrainersHowTos/" />
         </div>
         <Footer />
       </div>
