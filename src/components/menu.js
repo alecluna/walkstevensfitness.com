@@ -20,7 +20,7 @@ class Menu extends Component {
           style={{
             textDecoration: 'none',
             fontSize: '20px',
-            fontWeight: '700',
+            fontWeight: '400',
             color: 'hsl(0,0%,13%)',
             marginBottom: '10px',
             marginLeft: '1em'
@@ -44,7 +44,7 @@ class Menu extends Component {
               }}
               to="/"
             >
-              Home
+              <Typography>Home</Typography>
             </Link>
           </li>
           <li>
@@ -55,7 +55,7 @@ class Menu extends Component {
               }}
               to="/clients"
             >
-              Client Testimonies
+              <Typography>Client Testimonies</Typography>
             </Link>
           </li>
           <li>
@@ -66,7 +66,7 @@ class Menu extends Component {
               }}
               to="/howtos"
             >
-              How To's
+              <Typography> How To's</Typography>
             </Link>
           </li>
           <li>
@@ -77,7 +77,7 @@ class Menu extends Component {
               }}
               to="courses"
             >
-              Courses
+              <Typography> Plans </Typography>
             </Link>
           </li>
         </ul>

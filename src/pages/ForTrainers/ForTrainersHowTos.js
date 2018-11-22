@@ -19,15 +19,55 @@ export default function ForTrainersHowTos() {
         <TextContent text="Where do I Start?" />
       </section>
       <Border />
-      <TextContent text="How to communicate" style={{ marginTop: '10%' }} />
       <section>
-        <li>How to teach</li>
-        <li>What to expect</li>
-        <li>How to schedule</li>
-        <li>How to get clients</li>
-        <li>How to assess clients</li>
-        <li>What forms do I need to train?</li>
+        <div
+          style={{
+            display: 'flex',
+            justifyContent: 'center',
+            listStyle: 'none'
+          }}
+        >
+          <ul style={{ listStyle: 'none' }}>
+            <li>
+              <TextContent
+                text="How to communicate?"
+                style={styles.sectionStyle}
+              />
+            </li>
+            <li>
+              <TextContent text="How do I teach?" style={styles.sectionStyle} />
+            </li>
+            <li>
+              <TextContent text="What to expect?" style={styles.sectionStyle} />
+            </li>
+            <li>
+              <TextContent
+                text="How to schedule?"
+                style={styles.sectionStyle}
+              />
+            </li>
+            <li>
+              <TextContent
+                text="How to get clients?"
+                style={styles.sectionStyle}
+              />
+            </li>
+            <li>
+              <TextContent
+                text="How to assess clients?"
+                style={styles.sectionStyle}
+              />
+            </li>
+            <li>
+              <TextContent
+                text="What forms do I need to train?"
+                style={styles.sectionStyle}
+              />
+            </li>
+          </ul>
+        </div>
       </section>
+      <Border />
 
       <Footer />
     </div>

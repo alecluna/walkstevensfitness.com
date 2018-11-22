@@ -1,9 +1,6 @@
 import React, { Component } from 'react'
 import TextContent from '../components/TextContent'
 import Footer from '../components/Footer'
-import Typography from '../../node_modules/@material-ui/core/Typography'
-import Card from '../../node_modules/@material-ui/core/Card'
-import CardContent from '../../node_modules/@material-ui/core/CardContent'
 import Hero from '../components/Hero'
 import PopUpDialogue from '../components/PopUpDialogue'
 import Image from '../components/Image'
@@ -14,9 +11,8 @@ const styles = {
     marginTop: '10%',
     display: 'flex',
     flexDirection: 'row-reverse',
-    justifyContent: 'space-around',
+    justifyContent: 'center',
     flexWrap: 'wrap',
-    borderBottom: '1px solid #A0A0A0',
     paddingBottom: '5%'
   }
 }
@@ -63,15 +59,23 @@ export default class IndexPage extends Component {
         </section>
         <Border />
         <section style={styles.section}>
-          <div style={{ maxWidth: '50%', marginRight: '5%' }}>
+          <div style={{ maxWidth: '50%' }}>
             <Image />
           </div>
-          <div style={{ maxWidth: '50%', marginTop: '5%' }}>
+          <div style={{ maxWidth: '50%', marginTop: '5%', marginRight: '5%' }}>
             <TextContent text={fillerText} />
           </div>
         </section>
+        <Border />
         <section style={styles.section}>
-          <div style={{ maxWidth: '50%', marginTop: '5%', marginRight: '5%' }}>
+          <div
+            style={{
+              maxWidth: '50%',
+              marginTop: '5%',
+              marginLeft: '5%',
+              marginBottom: '5%'
+            }}
+          >
             <TextContent text={fillerText} />
           </div>
           <div style={{ maxWidth: '50%' }}>
