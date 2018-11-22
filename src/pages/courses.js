@@ -6,13 +6,13 @@ import Footer from '../components/Footer'
 import Hero from '../components/Hero'
 import Border from '../components/Border'
 
-class Courses extends Component {
+export default class Courses extends Component {
   render() {
     return (
       <div>
         <Hero text="Plans" />
         <section
-          style={{ marginTop: '10%', fontSize: '3em', fontWeight: '200' }}
+          style={{ marginTop: '10%', fontSize: '2em', fontWeight: '200' }}
         >
           <TextContent text="Workout and Nutritional Plans" />
         </section>
@@ -26,13 +26,19 @@ class Courses extends Component {
             flexWrap: 'wrap'
           }}
         >
-          <CardComponent text="Work Out Plans" linkto="/workoutplans" />
-          <CardComponent text="Nutrition Plans" linkto="/nutritionplans" />
+          <CardComponent
+            text="Work Out Plans"
+            linkto="/workoutplans"
+            className="grow"
+          />
+          <CardComponent
+            text="Nutrition Plans"
+            linkto="/nutritionplans"
+            className="grow"
+          />
         </div>
         <Footer />
       </div>
     )
   }
 }
-
-export default Courses

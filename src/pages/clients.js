@@ -34,8 +34,7 @@ class Clients extends Component {
           style={{
             marginTop: '10%',
             fontSize: '2em',
-            fontWeight: '200',
-            marginRight: '5%'
+            fontWeight: '200'
           }}
         >
           <TextContent text="What Clients Are Saying" />
@@ -45,7 +44,7 @@ class Clients extends Component {
           <div style={{ maxWidth: '50%' }}>
             <Image />
           </div>
-          <div style={{ maxWidth: '50%', marginTop: '5%', marginLeft: '5%' }}>
+          <div style={{ maxWidth: '50%', marginTop: '5%', marginRight: '5%' }}>
             <TextContent text="Walker is an amazing trainer, I've progressed extrememly rapidly through his programs - Jake Long" />
           </div>
         </section>

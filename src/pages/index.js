@@ -53,7 +53,7 @@ export default class IndexPage extends Component {
       <div>
         <Hero text="Welcome to WalkStevenFitness" />
         <section
-          style={{ marginTop: '10%', fontSize: '3em', fontWeight: '200' }}
+          style={{ marginTop: '10%', fontSize: '2em', fontWeight: '200' }}
         >
           <TextContent text="What I Do" />
         </section>

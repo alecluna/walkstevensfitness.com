@@ -5,13 +5,13 @@ import CardComponent from '../components/CardComponent'
 import Border from '../components/Border'
 import Footer from '../components/Footer'
 
-class HowTos extends Component {
+export default class HowTos extends Component {
   render() {
     return (
       <div>
         <Hero text="How To's" />
         <section
-          style={{ marginTop: '10%', fontSize: '3em', fontWeight: '200' }}
+          style={{ marginTop: '10%', fontSize: '2em', fontWeight: '200' }}
         >
           <TextContent text="For Clients and Trainers" />
         </section>
@@ -32,5 +32,3 @@ class HowTos extends Component {
     )
   }
 }
-
-export default HowTos
