@@ -26,9 +26,9 @@ const styles = {
 export default class CardComponent extends Component {
   render() {
     return (
-      <div>
+      <div style={styles.card}>
         <Link to={this.props.linkto} style={styles.links}>
-          <Card style={styles.card}>
+          <Card className="grow">
             <CardMedia
               component="img"
               image={'https://picsum.photos/394/394'}
