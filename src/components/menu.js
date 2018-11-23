@@ -75,7 +75,7 @@ class Menu extends Component {
                 textDecoration: 'none',
                 color: 'black'
               }}
-              to="courses"
+              to="/courses"
             >
               <Typography> Plans </Typography>
             </Link>

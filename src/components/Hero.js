@@ -22,7 +22,7 @@ export default class Hero extends Component {
   render() {
     return (
       <div style={styles.background}>
-        <Paper style={styles.paperStyle} elevation={11}>
+        <Paper style={styles.paperStyle} elevation={20}>
           <div style={{ textAlign: 'center', marginTop: '50px' }}>
             <Typography
               variant="display4"
