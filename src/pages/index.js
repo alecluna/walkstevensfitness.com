@@ -5,6 +5,7 @@ import Hero from '../components/Hero'
 import PopUpDialogue from '../components/PopUpDialogue'
 import Image from '../components/Image'
 import Border from '../components/Border'
+import Dialog from '@material-ui/core/Dialog'
 
 const styles = {
   section: {
@@ -27,25 +28,33 @@ pariatur.Excepteur sint occaecat cupidatat non proident, sunt in
 export default class IndexPage extends Component {
   constructor() {
     super()
+    this.state = {
+      open: true
+    }
+    this._delayPopUp = this._delayPopUp.bind(this)
   }
 
   componentDidMount() {
-    setInterval(this._popUpDialogue(), 5000)
+    this._popUpDialogue()
   }
 
-  _popUpDialogue() {
-    setTimeout(() => {
-      this._delayPopUp()
-    }, 2000)
+  _toggleHidden = () => {
+    this.setState({ open: !open })
   }
 
-  _delayPopUp() {
-    console.log('pop up fired at 2 seconds')
-    return (
-      <div>
-        <PopUpDialogue open="true" />
-      </div>
-    )
+  _popUpDialogue = () => {
+    setTimeout(this._delayPopUp, 2000)
+  }
+
+  _delayPopUp = () => {
+    // return (
+    //   <div>
+    //     <Dialog modal={true} open={open} contentStyle={{ width: 900 }}>
+    //       Test
+    //     </Dialog>
+    //   </div>
+    // )
+    window.alert('test')
   }
 
   render() {
@@ -57,6 +66,7 @@ export default class IndexPage extends Component {
         >
           <TextContent text="What I Do" />
         </section>
+
         <Border />
         <section style={styles.section}>
           <div style={{ maxWidth: '50%' }}>

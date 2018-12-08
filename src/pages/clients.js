@@ -29,7 +29,7 @@ class Clients extends Component {
   render() {
     return (
       <div>
-        <Hero text="Client Testimonies" />
+        <Hero text="Client Testimonials" />
         <section
           style={{
             marginTop: '10%',
