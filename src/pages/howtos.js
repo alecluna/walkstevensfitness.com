@@ -24,7 +24,11 @@ export default class HowTos extends Component {
             flexDirection: 'row'
           }}
         >
-          <CardComponent text="For Clients" linkto="/ClientHowTos/" />
+          <CardComponent
+            text="For Clients"
+            linkto="/ClientHowTos/"
+            //image={foodImage} TODO add unique image prop
+          />
           <CardComponent text="For Trainers" linkto="/ForTrainersHowTos/" />
         </div>
         <Footer />

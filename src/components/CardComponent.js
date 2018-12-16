@@ -22,6 +22,7 @@ const styles = {
     fontSize: '28px'
   }
 }
+const image = 'https://picsum.photos/394/394'
 
 export default class CardComponent extends Component {
   render() {
@@ -29,10 +30,8 @@ export default class CardComponent extends Component {
       <div style={styles.card}>
         <Link to={this.props.linkto} style={styles.links}>
           <Card className="grow">
-            <CardMedia
-              component="img"
-              image={'https://picsum.photos/394/394'}
-            />
+            <img src={image} />
+
             <CardContent>
               <Typography gutterBottom variant="headline" component="h2">
                 {this.props.text}
