@@ -6,6 +6,12 @@ import PopUpDialogue from '../components/PopUpDialogue'
 import Image from '../components/Image'
 import Border from '../components/Border'
 import Dialog from '@material-ui/core/Dialog'
+import DialogActions from '@material-ui/core/DialogActions'
+import DialogContent from '@material-ui/core/DialogContent'
+import DialogContentText from '@material-ui/core/DialogContentText'
+import DialogTitle from '@material-ui/core/DialogTitle'
+import TextField from '@material-ui/core/TextField'
+import Button from '@material-ui/core/Button'
 
 const styles = {
   section: {
@@ -28,45 +34,55 @@ pariatur.Excepteur sint occaecat cupidatat non proident, sunt in
 export default class IndexPage extends Component {
   constructor() {
     super()
-    this.state = {
-      open: true
-    }
-    this._delayPopUp = this._delayPopUp.bind(this)
+    this.state = { open: true }
   }
 
-  componentDidMount() {
-    this._popUpDialogue()
-  }
+  // componentDidMount() {
+  //   this._popUpDialogue
+  // }
 
-  _toggleHidden = () => {
-    this.setState({ open: !open })
-  }
-
-  _popUpDialogue = () => {
-    setTimeout(this._delayPopUp, 2000)
-  }
-
-  _delayPopUp = () => {
-    // return (
-    //   <div>
-    //     <Dialog modal={true} open={open} contentStyle={{ width: 900 }}>
-    //       Test
-    //     </Dialog>
-    //   </div>
-    // )
-    window.alert('test')
+  _handleClose = () => {
+    this.setState({ open: false })
   }
 
   render() {
     return (
       <div>
+        <Dialog
+          open={this.state.open}
+          onClose={this._handleClose}
+          aria-labelledby="form-dialog-title"
+        >
+          <DialogTitle id="form-dialog-title">Subscribe</DialogTitle>
+          <DialogContent>
+            <DialogContentText>
+              To subscribe to this website, please enter your email address
+              here. We will send updates occasionally.
+            </DialogContentText>
+            <TextField
+              autoFocus
+              margin="dense"
+              id="name"
+              label="Email Address"
+              type="email"
+              fullWidth
+            />
+          </DialogContent>
+          <DialogActions>
+            <Button onClick={this.handleClose} color="primary">
+              Cancel
+            </Button>
+            <Button onClick={this.handleClose} color="primary">
+              Subscribe
+            </Button>
+          </DialogActions>
+        </Dialog>
         <Hero text="Welcome to WalkStevenFitness" />
         <section
           style={{ marginTop: '10%', fontSize: '2em', fontWeight: '200' }}
         >
           <TextContent text="What I Do" />
         </section>
-
         <Border />
         <section style={styles.section}>
           <div style={{ maxWidth: '50%' }}>
