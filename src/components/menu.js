@@ -3,8 +3,31 @@ import Link from 'gatsby-link'
 import '../layouts/index.css'
 import Typography from '../../node_modules/@material-ui/core/Typography'
 import Border from './Border'
+import List from '../../node_modules/@material-ui/core/List'
+import ListItem from '../../node_modules/@material-ui/core/ListItem'
+import Collapse from '../../node_modules/@material-ui/core/Collapse'
+import ExpandLess from '../../node_modules/@material-ui/icons/ExpandLess'
+import ExpandMore from '../../node_modules/@material-ui/icons/ExpandMore'
+import Divider from '../../node_modules/@material-ui/core/Divider'
 
+const styles = {
+  boldType: {
+    fontWeight: 'bold'
+  },
+  subListStyles: {
+    marginTop: 'none',
+    marginLeft: '20px'
+  }
+}
 class Menu extends Component {
+  state = {
+    open: false
+  }
+
+  handleClick = () => {
+    this.setState(state => ({ open: !state.open }))
+  }
+
   render() {
     return (
       <div
@@ -20,7 +43,7 @@ class Menu extends Component {
           style={{
             textDecoration: 'none',
             fontSize: '20px',
-            fontWeight: '400',
+            fontWeight: 'bold',
             color: 'hsl(0,0%,13%)',
             marginBottom: '10px',
             marginLeft: '1em'
@@ -28,60 +51,69 @@ class Menu extends Component {
         >
           Menu
         </Typography>
-        <Border />
-        <ul
-          style={{
-            fontFamily: 'Roboto',
-            listStyleType: 'none',
-            marginTop: '20px'
-          }}
-        >
-          <li>
-            <Link
-              style={{
-                textDecoration: 'none',
-                color: 'black'
-              }}
-              to="/"
-            >
-              <Typography>Home</Typography>
+        <Divider />
+        <List style={{ fontFamily: 'Roboto', listStyleType: 'none' }}>
+          <ListItem button>
+            <Link style={{ textDecoration: 'none' }} to="/">
+              <Typography style={styles.boldType}>Home</Typography>
             </Link>
-          </li>
-          <li>
-            <Link
-              style={{
-                textDecoration: 'none',
-                color: 'black'
-              }}
-              to="/clients"
-            >
-              <Typography>Client Testimonies</Typography>
+          </ListItem>
+          <ListItem button>
+            <Link style={{ textDecoration: 'none' }} to="/clients">
+              <Typography style={styles.boldType}>
+                Client Testimonies
+              </Typography>
             </Link>
-          </li>
-          <li>
-            <Link
-              style={{
-                textDecoration: 'none',
-                color: 'black'
-              }}
-              to="/howtos"
-            >
-              <Typography> How To's</Typography>
+          </ListItem>
+          <Divider />
+          <ListItem button>
+            <Link style={{ textDecoration: 'none' }} to="/howtos">
+              <Typography style={styles.boldType}> How To's</Typography>
             </Link>
-          </li>
-          <li>
+          </ListItem>
+          <ListItem button style={{ marginLeft: '20px' }}>
             <Link
-              style={{
-                textDecoration: 'none',
-                color: 'black'
-              }}
+              style={{ textDecoration: 'none', color: 'black' }}
+              to="/ClientHowTos"
+            >
+              <Typography> For Clients </Typography>
+            </Link>
+          </ListItem>
+          <ListItem button style={{ marginLeft: '20px' }}>
+            <Link
+              style={{ textDecoration: 'none', color: 'black' }}
+              to="/ForTrainersHowTos"
+            >
+              <Typography> For Trainers </Typography>
+            </Link>
+          </ListItem>
+          <Divider />
+          <ListItem button>
+            <Link
+              style={{ textDecoration: 'none', color: 'black' }}
               to="/courses"
             >
-              <Typography> Plans </Typography>
+              <Typography style={styles.boldType}> Plans </Typography>
             </Link>
-          </li>
-        </ul>
-        <Border />
+          </ListItem>
+          <ListItem button style={{ marginLeft: '20px' }}>
+            <Link
+              style={{ textDecoration: 'none', color: 'black' }}
+              to="/nutritionplans"
+            >
+              <Typography> Nutrition Plans </Typography>
+            </Link>
+          </ListItem>
+          <ListItem button style={{ marginLeft: '20px' }}>
+            <Link
+              style={{ textDecoration: 'none', color: 'black' }}
+              to="/workoutplans"
+            >
+              <Typography> Fitness Plans </Typography>
+            </Link>
+          </ListItem>
+          <Divider />
+        </List>
       </div>
     )
   }

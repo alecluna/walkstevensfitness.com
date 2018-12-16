@@ -42,7 +42,7 @@ export default class IndexPage extends Component {
   // }
 
   _handleClose = () => {
-    this.setState({ open: false })
+    this.setState({ open: !open })
   }
 
   render() {

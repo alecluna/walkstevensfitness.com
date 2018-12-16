@@ -3,6 +3,11 @@ import TextContent from '../../components/TextContent'
 
 export default class Biceps extends Component {
   render() {
-    return <TextContent />
+    return (
+      <div>
+        <TextContent />
+        <Footer />
+      </div>
+    )
   }
 }
