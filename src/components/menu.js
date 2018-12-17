@@ -2,12 +2,8 @@ import React, { Component } from 'react'
 import Link from 'gatsby-link'
 import '../layouts/index.css'
 import Typography from '../../node_modules/@material-ui/core/Typography'
-import Border from './Border'
 import List from '../../node_modules/@material-ui/core/List'
 import ListItem from '../../node_modules/@material-ui/core/ListItem'
-import Collapse from '../../node_modules/@material-ui/core/Collapse'
-import ExpandLess from '../../node_modules/@material-ui/icons/ExpandLess'
-import ExpandMore from '../../node_modules/@material-ui/icons/ExpandMore'
 import Divider from '../../node_modules/@material-ui/core/Divider'
 
 const styles = {
