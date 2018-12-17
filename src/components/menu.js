@@ -16,7 +16,9 @@ const styles = {
   },
   subListStyles: {
     marginTop: 'none',
-    marginLeft: '20px'
+    marginLeft: '20px',
+    height: '20px',
+    marginBottom: '10px'
   }
 }
 class Menu extends Component {
@@ -71,7 +73,7 @@ class Menu extends Component {
               <Typography style={styles.boldType}> How To's</Typography>
             </Link>
           </ListItem>
-          <ListItem button style={{ marginLeft: '20px' }}>
+          <ListItem button style={styles.subListStyles}>
             <Link
               style={{ textDecoration: 'none', color: 'black' }}
               to="/ClientHowTos"
@@ -79,7 +81,7 @@ class Menu extends Component {
               <Typography> For Clients </Typography>
             </Link>
           </ListItem>
-          <ListItem button style={{ marginLeft: '20px' }}>
+          <ListItem button style={styles.subListStyles}>
             <Link
               style={{ textDecoration: 'none', color: 'black' }}
               to="/ForTrainersHowTos"
@@ -96,7 +98,7 @@ class Menu extends Component {
               <Typography style={styles.boldType}> Plans </Typography>
             </Link>
           </ListItem>
-          <ListItem button style={{ marginLeft: '20px' }}>
+          <ListItem button style={styles.subListStyles}>
             <Link
               style={{ textDecoration: 'none', color: 'black' }}
               to="/nutritionplans"
@@ -104,7 +106,7 @@ class Menu extends Component {
               <Typography> Nutrition Plans </Typography>
             </Link>
           </ListItem>
-          <ListItem button style={{ marginLeft: '20px' }}>
+          <ListItem button style={styles.subListStyles}>
             <Link
               style={{ textDecoration: 'none', color: 'black' }}
               to="/workoutplans"
