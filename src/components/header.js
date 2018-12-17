@@ -6,7 +6,7 @@ import Link from 'gatsby-link'
 import IconButton from '@material-ui/core/IconButton'
 import MenuIcon from '@material-ui/icons/Menu'
 import Drawer from '@material-ui/core/Drawer'
-import Menu from './Menu'
+import Menu from '../components/Menu'
 
 const styles = {
   menuButton: {
