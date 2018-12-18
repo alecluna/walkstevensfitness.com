@@ -3,7 +3,7 @@ import CardComponent from '../components/cardcomponent'
 import Footer from '../components/footer'
 
 export default function ClientHowTos() {
-  const muscleGroups = ['Biceps', 'Triceps', 'Shoulders', 'Core', 'Legs']
+  const muscleGroups = ['biceps', 'triceps', 'shoulders', 'core', 'legs']
   return (
     <div>
       <div
@@ -19,7 +19,7 @@ export default function ClientHowTos() {
             <li style={{ listStyle: 'none' }} key={index.toString()}>
               <CardComponent
                 text={muscles}
-                linkto={`/MuscleGroups/${muscles}/`}
+                linkto={`/musclegroups/${muscles}/`}
                 className="grow"
               />
             </li>
