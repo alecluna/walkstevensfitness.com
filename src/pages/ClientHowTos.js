@@ -1,6 +1,6 @@
 import React from 'react'
-import CardComponent from '../components/CardComponent'
-import Footer from '../components/Footer'
+import CardComponent from '../components/cardcomponent'
+import Footer from '../components/footer'
 
 export default function ClientHowTos() {
   const muscleGroups = ['Biceps', 'Triceps', 'Shoulders', 'Core', 'Legs']

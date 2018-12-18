@@ -3,8 +3,8 @@ import Link from 'gatsby-link'
 import Card from '@material-ui/core/Card'
 import CardContent from '@material-ui/core/CardContent'
 import Typography from '@material-ui/core/Typography'
-import TitleComponent from '../components/TitleComponent'
-import Footer from '../components/Footer'
+import TitleComponent from '../components/titlecomponent'
+import Footer from '../components/footer'
 
 export default class Workoutplans extends Component {
   render() {

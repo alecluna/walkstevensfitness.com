@@ -1,10 +1,5 @@
 import React, { Component } from 'react'
-import TextContent from '../components/TextContent'
-import Footer from '../components/Footer'
-import Hero from '../components/Hero'
-import PopUpDialogue from '../components/PopUpDialogue'
-import Image from '../components/Image'
-import Border from '../components/Border'
+import TextContent from '../components/textcontent'
 import Dialog from '@material-ui/core/Dialog'
 import DialogActions from '@material-ui/core/DialogActions'
 import DialogContent from '@material-ui/core/DialogContent'
@@ -12,6 +7,11 @@ import DialogContentText from '@material-ui/core/DialogContentText'
 import DialogTitle from '@material-ui/core/DialogTitle'
 import TextField from '@material-ui/core/TextField'
 import Button from '@material-ui/core/Button'
+import Footer from '../components/footer'
+import Hero from '../components/hero'
+import PopUpDialogue from '../components/PopUpDialogue'
+import Image from '../components/image'
+import Border from '../components/border'
 
 const styles = {
   section: {

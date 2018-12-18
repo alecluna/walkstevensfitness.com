@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
-import TextContent from '../components/TextContent'
-import Hero from '../components/Hero'
-import CardComponent from '../components/CardComponent'
-import Border from '../components/Border'
-import Footer from '../components/Footer'
+import TextContent from '../components/textcontent'
+import Hero from '../components/hero'
+import CardComponent from '../components/cardcomponent'
+import Border from '../components/border'
+import Footer from '../components/footer'
 
 export default class HowTos extends Component {
   render() {

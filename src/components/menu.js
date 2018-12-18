@@ -2,8 +2,8 @@ import React, { Component } from 'react'
 import Link from 'gatsby-link'
 import '../layouts/index.css'
 import Typography from '../../node_modules/@material-ui/core/Typography'
-import List from '../../node_modules/@material-ui/core/List'
 import ListItem from '../../node_modules/@material-ui/core/ListItem'
+import List from '../../node_modules/@material-ui/core/List'
 import Divider from '../../node_modules/@material-ui/core/Divider'
 
 const styles = {
@@ -15,7 +15,7 @@ const styles = {
     marginLeft: '20px'
   }
 }
-class Menu extends Component {
+export default class Menu extends Component {
   state = {
     open: false
   }
@@ -114,5 +114,3 @@ class Menu extends Component {
     )
   }
 }
-
-export default Menu

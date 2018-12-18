@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import Typography from '../../node_modules/@material-ui/core/Typography'
 import Paper from '../../node_modules/@material-ui/core/Paper'
-import Border from '../components/Border'
+import Border from '../components/border'
 
 const styles = {
   background: {

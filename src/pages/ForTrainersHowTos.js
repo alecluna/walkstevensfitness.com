@@ -1,8 +1,8 @@
 import React from 'react'
-import Hero from '../components/Hero'
-import TextContent from '../components/TextContent'
-import Footer from '../components/Footer'
-import Border from '../components/Border'
+import Hero from '../components/hero'
+import TextContent from '../components/textcontent'
+import Footer from '../components/footer'
+import Border from '../components/border'
 import { Typography } from '@material-ui/core'
 
 const styles = {

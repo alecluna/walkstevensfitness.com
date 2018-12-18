@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
-import TextContent from '../../components/TextContent'
-import Footer from '../../components/Footer'
+import TextContent from '../../components/textcontent'
+import Footer from '../../components/footer'
 
 export default class Core extends Component {
   render() {

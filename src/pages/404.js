@@ -1,6 +1,6 @@
 import React from 'react'
-import TitleComponent from '../components/TitleComponent'
-import Footer from '../components/Footer'
+import TitleComponent from '../components/titlecomponent'
+import Footer from '../components/footer'
 
 const NotFoundPage = () => (
   <div>

@@ -1,10 +1,9 @@
 import React, { Component } from 'react'
-import TextContent from '../components/TextContent'
-import TitleComponent from '../components/TitleComponent'
-import Hero from '../components/Hero'
-import Footer from '../components/Footer'
-import Image from '../components/Image'
-import Border from '../components/Border'
+import TextContent from '../components/textcontent'
+import Hero from '../components/hero'
+import Footer from '../components/footer'
+import Image from '../components/image'
+import Border from '../components/border'
 
 const styles = {
   section: {

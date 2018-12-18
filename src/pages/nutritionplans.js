@@ -3,8 +3,8 @@ import Link from 'gatsby-link'
 import Card from '@material-ui/core/Card'
 import CardContent from '../../node_modules/@material-ui/core/CardContent'
 import Typography from '../../node_modules/@material-ui/core/Typography'
-import TitleComponent from '../components/TitleComponent'
-import Footer from '../components/Footer'
+import TitleComponent from '../components/titlecomponent'
+import Footer from '../components/footer'
 
 export default class Nutritionplans extends Component {
   render() {

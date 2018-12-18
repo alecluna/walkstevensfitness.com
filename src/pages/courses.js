@@ -1,10 +1,9 @@
 import React, { Component } from 'react'
-import TextContent from '../components/TextContent'
-import CardComponent from '../components/CardComponent'
-import TitleComponent from '../components/TitleComponent'
-import Footer from '../components/Footer'
-import Hero from '../components/Hero'
-import Border from '../components/Border'
+import TextContent from '../components/textcontent'
+import CardComponent from '../components/cardcomponent'
+import Footer from '../components/footer'
+import Hero from '../components/hero'
+import Border from '../components/border'
 
 export default class Courses extends Component {
   render() {
