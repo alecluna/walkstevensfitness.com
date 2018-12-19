@@ -3,7 +3,7 @@ import Hero from '../components/hero'
 import TextContent from '../components/textcontent'
 import Footer from '../components/footer'
 import Border from '../components/border'
-import { Typography } from '@material-ui/core'
+import TrainerHowTo from '../components/trainerhowto'
 
 const styles = {
   sectionStyle: {
@@ -30,59 +30,7 @@ export default function ForTrainersHowTos() {
       </section>
       <Border />
       <section>
-        <div
-          style={{
-            display: 'flex',
-            justifyContent: 'center',
-            listStyle: 'none'
-          }}
-        >
-          <ul style={{ listStyle: 'none', maxWidth: '50%' }}>
-            <li>
-              <TextContent
-                text="How to communicate?"
-                style={styles.sectionStyle}
-              />
-              <Typography> {fillerText} </Typography>
-            </li>
-            <li>
-              <TextContent text="How do I teach?" style={styles.sectionStyle} />
-              <Typography> {fillerText} </Typography>
-            </li>
-            <li>
-              <TextContent text="What to expect?" style={styles.sectionStyle} />
-              <Typography> {fillerText} </Typography>
-            </li>
-            <li>
-              <TextContent
-                text="How to schedule?"
-                style={styles.sectionStyle}
-              />
-              <Typography> {fillerText} </Typography>
-            </li>
-            <li>
-              <TextContent
-                text="How to get clients?"
-                style={styles.sectionStyle}
-              />
-              <Typography> {fillerText} </Typography>
-            </li>
-            <li>
-              <TextContent
-                text="How to assess clients?"
-                style={styles.sectionStyle}
-              />
-              <Typography> {fillerText} </Typography>
-            </li>
-            <li>
-              <TextContent
-                text="What forms do I need to train?"
-                style={styles.sectionStyle}
-              />
-              <Typography> {fillerText} </Typography>
-            </li>
-          </ul>
-        </div>
+        <TrainerHowTo />
       </section>
       <Border />
 
