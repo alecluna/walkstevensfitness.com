@@ -42,22 +42,23 @@ export default class IndexPage extends Component {
   // }
 
   _handleClose = () => {
-    this.setState({ open: !open })
+    this.setState({ open: false })
   }
 
   render() {
+    const { open } = this.state
     return (
       <div>
         <Dialog
-          open={this.state.open}
+          open={open}
           onClose={this._handleClose}
           aria-labelledby="form-dialog-title"
         >
           <DialogTitle id="form-dialog-title">Subscribe</DialogTitle>
           <DialogContent>
             <DialogContentText>
-              To subscribe to this website, please enter your email address
-              here. We will send updates occasionally.
+              To subscribe for updates and deals, please enter your email
+              address here!
             </DialogContentText>
             <TextField
               autoFocus
@@ -69,10 +70,10 @@ export default class IndexPage extends Component {
             />
           </DialogContent>
           <DialogActions>
-            <Button onClick={this.handleClose} color="primary">
+            <Button onClick={this._handleClose} color="primary">
               Cancel
             </Button>
-            <Button onClick={this.handleClose} color="primary">
+            <Button onClick={this._handleClose} color="primary">
               Subscribe
             </Button>
           </DialogActions>

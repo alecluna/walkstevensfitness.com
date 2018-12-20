@@ -15,21 +15,23 @@ export default class PopUpDialogue extends Component {
 
   _handleClose = () => {
     this.setState({ open: false })
+    console.log('close fired' + this.props.open)
   }
 
   render() {
+    const { open } = this.state
     return (
       <div>
         <Dialog
-          open={this.props.open}
+          open={open}
           onClose={this._handleClose}
           aria-labelledby="form-dialog-title"
         >
           <DialogTitle id="form-dialog-title">Subscribe</DialogTitle>
           <DialogContent>
             <DialogContentText>
-              To subscribe to this website, please enter your email address
-              here. We will send updates occasionally.
+              To subscribe, please enter your email address here. We will send
+              updates occasionally.
             </DialogContentText>
             <TextField
               autoFocus
@@ -41,7 +43,12 @@ export default class PopUpDialogue extends Component {
             />
           </DialogContent>
           <DialogActions>
-            <Button onClick={this.handleClose} color="primary">
+            <Button
+              onClick={() => {
+                this.setState({ open: false })
+              }}
+              color="primary"
+            >
               Cancel
             </Button>
             <Button onClick={this.handleClose} color="primary">

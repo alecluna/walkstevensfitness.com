@@ -1,6 +1,4 @@
 import React from 'react'
-import PropTypes from 'prop-types'
-import { withStyles } from '@material-ui/core/styles'
 import Stepper from '../../node_modules/@material-ui/core/Stepper'
 import Step from '../../node_modules/@material-ui/core/Step'
 import StepLabel from '../../node_modules/@material-ui/core/StepLabel'
@@ -13,7 +11,7 @@ import TextContent from './textcontent'
 const fillerText = `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
 eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad
 minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-aliquip ex ea commodo consequat.Duis aute irure dolor in
+aliquip ex ea commodo consequat. Duis aute irure dolor in
   reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
 pariatur.Excepteur sint occaecat cupidatat non proident, sunt in
   culpa qui officia deserunt mollit anim id est laborum.`
@@ -115,7 +113,7 @@ export default class TrainerHowTo extends React.Component {
           <Paper style={{ margin: '20px' }} square elevation={0}>
             <Typography>
               Thats it! - If you would like to go more in-depth, contact me to
-              schedule a one-on-one with me for dietary and fitness plans.
+              schedule a one-on-one appointment for dietary and fitness plans.
             </Typography>
             <Button color="secondary" onClick={this.handleReset}>
               Reset
