@@ -22,7 +22,7 @@ export default function Footer() {
   return (
     <div style={{ marginTop: '10%' }}>
       <section style={styles.footerDemensions}>
-        <div>
+        <div style={{ paddingLeft: '10px' }}>
           <Typography style={{ color: 'white' }}> Contact Me:</Typography>
           <Typography style={{ color: 'white' }}> 916-555-55555</Typography>
         </div>
@@ -52,8 +52,19 @@ export default function Footer() {
           </div>
         </div>
       </section>
-      <div style={{ textAlign: 'center', backgroundColor: '#202020' }}>
-        <Typography style={{ color: 'white' }}>
+      <div
+        style={{
+          textAlign: 'left',
+          backgroundColor: '#202020'
+        }}
+      >
+        <Typography
+          style={{
+            marginLeft: '20px',
+            fontSize: '9px',
+            color: 'white'
+          }}
+        >
           Created by: Alec Luna @alecluna
         </Typography>
       </div>
