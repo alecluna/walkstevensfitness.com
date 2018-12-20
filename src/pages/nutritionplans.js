@@ -2,7 +2,6 @@ import React, { Component } from 'react'
 import Link from 'gatsby-link'
 import CardContent from '../../node_modules/@material-ui/core/CardContent'
 import Typography from '../../node_modules/@material-ui/core/Typography'
-import TitleComponent from '../components/titlecomponent'
 import Paper from '../../node_modules/@material-ui/core/Paper'
 import Footer from '../components/footer'
 import Hero from '../components/hero'
@@ -18,7 +17,7 @@ export default class Nutritionplans extends Component {
   render() {
     return (
       <div style={{ height: '100%' }}>
-        <Hero text="Nutrition Plans" />
+        <Hero text="Nutrition" />
         <div
           style={{
             marginTop: '10%',

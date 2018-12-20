@@ -1,12 +1,12 @@
 import React, { Component } from 'react'
-import TextContent from '../../components/textcontent'
+import Hero from '../../components/hero'
 import Footer from '../../components/footer'
 
 export default class Triceps extends Component {
   render() {
     return (
       <div>
-        <TextContent />
+        <Hero text="Triceps" />
         <Footer />
       </div>
     )

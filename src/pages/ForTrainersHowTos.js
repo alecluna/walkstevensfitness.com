@@ -33,7 +33,6 @@ export default function ForTrainersHowTos() {
         <TrainerHowTo />
       </section>
       <Border />
-
       <Footer />
     </div>
   )
