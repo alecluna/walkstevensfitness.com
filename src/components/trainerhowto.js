@@ -79,14 +79,16 @@ export default class TrainerHowTo extends React.Component {
     const { activeStep } = this.state
 
     return (
-      <div style={{ margin: '40px' }}>
+      <div style={{ margin: '20px' }}>
         <Stepper activeStep={activeStep} orientation="vertical">
           {steps.map((label, index) => {
             return (
               <Step key={label}>
                 <StepLabel>{label}</StepLabel>
                 <StepContent>
-                  <Typography>{getStepContent(index)}</Typography>
+                  <Typography style={{ marginBottom: '10px' }}>
+                    {getStepContent(index)}
+                  </Typography>
                   <div>
                     <div>
                       <Button
@@ -97,7 +99,7 @@ export default class TrainerHowTo extends React.Component {
                       </Button>
                       <Button
                         variant="contained"
-                        color="primary"
+                        color="secondary"
                         onClick={this.handleNext}
                       >
                         {activeStep === steps.length - 1 ? 'Finish' : 'Next'}
@@ -110,9 +112,14 @@ export default class TrainerHowTo extends React.Component {
           })}
         </Stepper>
         {activeStep === steps.length && (
-          <Paper square elevation={0}>
-            <Typography>All steps completed - you&apos;re finished</Typography>
-            <Button onClick={this.handleReset}>Reset</Button>
+          <Paper style={{ margin: '20px' }} square elevation={0}>
+            <Typography>
+              Thats it! - If you would like to go more in-depth, contact me to
+              schedule a one-on-one with me for dietary and fitness plans.
+            </Typography>
+            <Button color="secondary" onClick={this.handleReset}>
+              Reset
+            </Button>
           </Paper>
         )}
       </div>
