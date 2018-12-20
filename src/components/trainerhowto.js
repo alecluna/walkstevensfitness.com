@@ -8,22 +8,15 @@ import StepContent from '../../node_modules/@material-ui/core/StepContent'
 import Button from '../../node_modules/@material-ui/core/Button'
 import Paper from '../../node_modules/@material-ui/core/Paper'
 import Typography from '../../node_modules/@material-ui/core/Typography'
+import TextContent from './textcontent'
 
-const styles = theme => ({
-  root: {
-    width: '90%'
-  },
-  button: {
-    marginTop: theme.spacing.unit,
-    marginRight: theme.spacing.unit
-  },
-  actionsContainer: {
-    marginBottom: theme.spacing.unit * 2
-  },
-  resetContainer: {
-    padding: theme.spacing.unit * 3
-  }
-})
+const fillerText = `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad
+minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+aliquip ex ea commodo consequat.Duis aute irure dolor in
+  reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+pariatur.Excepteur sint occaecat cupidatat non proident, sunt in
+  culpa qui officia deserunt mollit anim id est laborum.`
 
 function getSteps() {
   return [
@@ -40,16 +33,19 @@ function getSteps() {
 function getStepContent(step) {
   switch (step) {
     case 0:
-      return `For each ad campaign that you create, you can control how much
-              you're willing to spend on clicks and conversions, which networks
-              and geographical locations you want your ads to show on, and more.`
+      return <TextContent text={fillerText} />
     case 1:
-      return 'An ad group contains one or more ads which target a shared set of keywords.'
+      return <TextContent text={fillerText} />
     case 2:
-      return `Try out different ad text to see what brings in the most customers,
-              and learn how to enhance your ads using features like ad extensions.
-              If you run into any problems with your ads, find out how to tell if
-              they're running and how to resolve approval issues.`
+      return <TextContent text={fillerText} />
+    case 3:
+      return <TextContent text={fillerText} />
+    case 4:
+      return <TextContent text={fillerText} />
+    case 5:
+      return <TextContent text={fillerText} />
+    case 6:
+      return <TextContent text={fillerText} />
     default:
       return 'Unknown step'
   }
@@ -79,12 +75,11 @@ export default class TrainerHowTo extends React.Component {
   }
 
   render() {
-    const { classes } = this.props
     const steps = getSteps()
     const { activeStep } = this.state
 
     return (
-      <div className={styles.root}>
+      <div style={{ margin: '40px' }}>
         <Stepper activeStep={activeStep} orientation="vertical">
           {steps.map((label, index) => {
             return (
@@ -92,12 +87,11 @@ export default class TrainerHowTo extends React.Component {
                 <StepLabel>{label}</StepLabel>
                 <StepContent>
                   <Typography>{getStepContent(index)}</Typography>
-                  <div className={classes.actionsContainer}>
+                  <div>
                     <div>
                       <Button
                         disabled={activeStep === 0}
                         onClick={this.handleBack}
-                        className={classes.button}
                       >
                         Back
                       </Button>
@@ -105,7 +99,6 @@ export default class TrainerHowTo extends React.Component {
                         variant="contained"
                         color="primary"
                         onClick={this.handleNext}
-                        className={classes.button}
                       >
                         {activeStep === steps.length - 1 ? 'Finish' : 'Next'}
                       </Button>
@@ -117,11 +110,9 @@ export default class TrainerHowTo extends React.Component {
           })}
         </Stepper>
         {activeStep === steps.length && (
-          <Paper square elevation={0} className={classes.resetContainer}>
+          <Paper square elevation={0}>
             <Typography>All steps completed - you&apos;re finished</Typography>
-            <Button onClick={this.handleReset} className={classes.button}>
-              Reset
-            </Button>
+            <Button onClick={this.handleReset}>Reset</Button>
           </Paper>
         )}
       </div>
