@@ -21,6 +21,11 @@ const styles = {
     justifyContent: 'center',
     flexWrap: 'wrap',
     paddingBottom: '5%'
+  },
+  imageText: {
+    maxWidth: '80%',
+    marginTop: '5%',
+    marginBottom: '5%'
   }
 }
 const fillerText = `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -89,20 +94,13 @@ export default class IndexPage extends Component {
           <div style={{ maxWidth: '50%' }}>
             <Image />
           </div>
-          <div style={{ maxWidth: '50%', marginTop: '5%', marginRight: '5%' }}>
+          <div style={styles.imageText}>
             <TextContent text={fillerText} />
           </div>
         </section>
         <Border />
         <section style={styles.section}>
-          <div
-            style={{
-              maxWidth: '50%',
-              marginTop: '5%',
-              marginLeft: '5%',
-              marginBottom: '5%'
-            }}
-          >
+          <div style={styles.imageText}>
             <TextContent text={fillerText} />
           </div>
           <div style={{ maxWidth: '50%' }}>
