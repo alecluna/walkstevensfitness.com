@@ -42,10 +42,6 @@ export default class IndexPage extends Component {
     this.state = { open: true }
   }
 
-  // componentDidMount() {
-  //   this._popUpDialogue
-  // }
-
   _handleClose = () => {
     this.setState({ open: false })
   }
@@ -83,6 +79,7 @@ export default class IndexPage extends Component {
             </Button>
           </DialogActions>
         </Dialog>
+
         <Hero text="Welcome to WalkStevenFitness" />
         <section
           style={{ marginTop: '10%', fontSize: '2em', fontWeight: '200' }}
