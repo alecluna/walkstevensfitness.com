@@ -39,7 +39,13 @@ pariatur.Excepteur sint occaecat cupidatat non proident, sunt in
 export default class IndexPage extends Component {
   constructor() {
     super()
-    this.state = { open: true }
+    this.state = { open: false }
+  }
+
+  componentDidMount() {
+    setTimeout(() => {
+      this.setState({ open: true })
+    }, 5000)
   }
 
   _handleClose = () => {
