@@ -8,17 +8,18 @@ import Border from '../components/border'
 
 const styles = {
   section: {
-    marginTop: '10%',
+    marginTop: '5%',
     display: 'flex',
-    flexDirection: 'row-reverse',
-    justifyContent: 'center',
+    flexDirection: 'row',
+    justifyContent: 'space-around',
     flexWrap: 'wrap',
     paddingBottom: '5%'
   },
   imageText: {
     maxWidth: '80%',
     marginTop: '5%',
-    marginBottom: '5%'
+    marginBottom: '2%',
+    textAlign: 'left'
   }
 }
 const fillerText = `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -55,11 +56,11 @@ export default class IndexPage extends Component {
         </section>
         <Border />
         <section style={styles.section}>
-          <div style={styles.imageText}>
-            <TextContent text={fillerText} />
-          </div>
           <div style={{ maxWidth: '50%' }}>
             <Image />
+          </div>
+          <div style={styles.imageText}>
+            <TextContent text={fillerText} />
           </div>
         </section>
         <Footer />
