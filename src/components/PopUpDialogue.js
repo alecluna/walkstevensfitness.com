@@ -10,12 +10,18 @@ import Button from '@material-ui/core/Button'
 export default class PopUpDialogue extends Component {
   constructor(props) {
     super(props)
-    this.state = { open: true }
+    this.state = { open: false }
+    this._handleClose = this._handleClose.bind(this)
+  }
+
+  componentDidMount() {
+    setTimeout(() => {
+      this.setState({ open: true })
+    }, 6000)
   }
 
   _handleClose = () => {
     this.setState({ open: false })
-    console.log('close fired' + this.props.open)
   }
 
   render() {
@@ -30,8 +36,8 @@ export default class PopUpDialogue extends Component {
           <DialogTitle id="form-dialog-title">Subscribe</DialogTitle>
           <DialogContent>
             <DialogContentText>
-              To subscribe, please enter your email address here. We will send
-              updates occasionally.
+              If you would like to subscribe to occasional updates on plans and
+              other offers, please enter your email address here!
             </DialogContentText>
             <TextField
               autoFocus
@@ -43,12 +49,7 @@ export default class PopUpDialogue extends Component {
             />
           </DialogContent>
           <DialogActions>
-            <Button
-              onClick={() => {
-                this.setState({ open: false })
-              }}
-              color="primary"
-            >
+            <Button onClick={this._handleClose} color="primary">
               Cancel
             </Button>
             <Button onClick={this.handleClose} color="primary">
