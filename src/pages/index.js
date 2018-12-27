@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import TextContent from '../components/textcontent'
 import Footer from '../components/footer'
+import Header from '../components/header'
 import Hero from '../components/hero'
 import PopUpDialogue from '../components/popupdialogue'
 import Image from '../components/image'
@@ -38,6 +39,7 @@ export default class IndexPage extends Component {
   render() {
     return (
       <div>
+        <Header />
         <PopUpDialogue />
         <Hero text="Welcome to WalkStevenFitness" />
         <section
