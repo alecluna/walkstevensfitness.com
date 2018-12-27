@@ -1,12 +1,12 @@
 import React from 'react'
 import Link from 'gatsby-link'
-import AppBar from '@material-ui/core/AppBar'
-import Toolbar from '@material-ui/core/Toolbar'
-import Typography from '@material-ui/core/Typography'
-import IconButton from '@material-ui/core/IconButton'
-import MenuIcon from '@material-ui/icons/Menu'
-import Drawer from '@material-ui/core/Drawer'
-import Menu from './menu'
+import AppBar from '../../node_modules/@material-ui/core/AppBar'
+import Toolbar from '../../node_modules/@material-ui/core/Toolbar'
+import Typography from '../../node_modules/@material-ui/core/Typography'
+import IconButton from '../../node_modules/@material-ui/core/IconButton'
+import MenuIcon from '../../node_modules/@material-ui/icons/Menu'
+import Drawer from '../../node_modules/@material-ui/core/Drawer'
+import Menu from '../../node_modules/@material-ui/icons/Menu'
 
 const styles = {
   menuButton: {

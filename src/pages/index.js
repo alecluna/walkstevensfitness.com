@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import Typography from '../../node_modules/@material-ui/core/Typography'
+import Header from '../components/header'
 
 const styles = {
   section: {
@@ -33,6 +34,7 @@ export default class IndexPage extends Component {
   render() {
     return (
       <div>
+        <Header />
         <Typography
           style={{ color: 'blue', textAlign: 'center', marginTop: '50px' }}
         >
