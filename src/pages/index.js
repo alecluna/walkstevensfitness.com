@@ -1,11 +1,5 @@
 import React, { Component } from 'react'
-import TextContent from '../components/textcontent'
-import Footer from '../components/footer'
-import Header from '../components/header'
-import Hero from '../components/hero'
-import PopUpDialogue from '../components/popupdialogue'
-import Image from '../components/image'
-import Border from '../components/border'
+import Typography from '../../node_modules/@material-ui/core/Typography'
 
 const styles = {
   section: {
@@ -39,33 +33,11 @@ export default class IndexPage extends Component {
   render() {
     return (
       <div>
-        <Header />
-        <PopUpDialogue />
-        <Hero text="Welcome to WalkStevenFitness" />
-        <section
-          style={{ marginTop: '10%', fontSize: '2em', fontWeight: '200' }}
+        <Typography
+          style={{ color: 'blue', textAlign: 'center', marginTop: '50px' }}
         >
-          <TextContent text="What I Do" />
-        </section>
-        <Border />
-        <section style={styles.section}>
-          <div style={{ maxWidth: '50%' }}>
-            <Image />
-          </div>
-          <div style={styles.imageText}>
-            <TextContent text={fillerText} />
-          </div>
-        </section>
-        <Border />
-        <section style={styles.section}>
-          <div style={{ maxWidth: '50%' }}>
-            <Image />
-          </div>
-          <div style={styles.imageText}>
-            <TextContent text={fillerText} />
-          </div>
-        </section>
-        <Footer />
+          Test Page was deployed!!
+        </Typography>
       </div>
     )
   }
