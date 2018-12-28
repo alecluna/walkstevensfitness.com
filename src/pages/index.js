@@ -19,8 +19,12 @@ const styles = {
   imageText: {
     maxWidth: '80%',
     marginTop: '5%',
-    marginBottom: '2%',
     textAlign: 'left'
+  },
+  sectionHeaderText: {
+    marginTop: '5%',
+    fontSize: '2em',
+    fontWeight: '200'
   }
 }
 const fillerText = `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -39,12 +43,9 @@ export default class IndexPage extends Component {
   render() {
     return (
       <div>
-        <Header />
         <PopUpDialogue />
         <Hero text="Welcome to WalkStevenFitness" />
-        <section
-          style={{ marginTop: '10%', fontSize: '2em', fontWeight: '200' }}
-        >
+        <section style={styles.sectionHeaderText}>
           <TextContent text="What I Do" />
         </section>
         <Border />
@@ -55,6 +56,9 @@ export default class IndexPage extends Component {
           <div style={styles.imageText}>
             <TextContent text={fillerText} />
           </div>
+        </section>
+        <section style={styles.sectionHeaderText}>
+          <TextContent text="What I Offer" />
         </section>
         <Border />
         <section style={styles.section}>
