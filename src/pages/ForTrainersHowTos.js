@@ -1,7 +1,6 @@
 import React from 'react'
 import Hero from '../components/hero'
 import TextContent from '../components/textcontent'
-import Footer from '../components/footer'
 import Border from '../components/border'
 import TrainerHowTo from '../components/trainerhowto'
 

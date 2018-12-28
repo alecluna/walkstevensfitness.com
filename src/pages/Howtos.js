@@ -3,7 +3,6 @@ import TextContent from '../components/textcontent'
 import Hero from '../components/hero'
 import CardComponent from '../components/cardcomponent'
 import Border from '../components/border'
-import Footer from '../components/footer'
 
 export default class HowTos extends Component {
   render() {

@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import TextContent from '../components/textcontent'
 import CardComponent from '../components/cardcomponent'
-import Footer from '../components/footer'
 import Hero from '../components/hero'
 import Border from '../components/border'
 

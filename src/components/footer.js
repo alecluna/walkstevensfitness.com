@@ -18,13 +18,16 @@ const styles = {
     borderRadius: '50px'
   }
 }
+
 export default function Footer() {
   return (
     <div style={{ marginTop: '10%' }}>
       <section style={styles.footerDemensions}>
         <div style={{ paddingLeft: '10px' }}>
           <Typography style={{ color: 'white' }}> Contact Me:</Typography>
-          <Typography style={{ color: 'white' }}> 916-555-55555</Typography>
+          <Typography style={{ textDecoration: 'none', color: 'white' }}>
+            916-555-55555
+          </Typography>
         </div>
         <div
           style={{
@@ -65,7 +68,7 @@ export default function Footer() {
             color: 'white'
           }}
         >
-          Created by: Alec Luna @alecluna
+          Created by: Alec Luna
         </Typography>
       </div>
     </div>

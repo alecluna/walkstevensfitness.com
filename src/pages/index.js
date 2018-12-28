@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import Header from '../components/header'
 import Hero from '../components/hero'
 import PopUpDialogue from '../components/popupdialogue'
 import TextContent from '../components/textcontent'
