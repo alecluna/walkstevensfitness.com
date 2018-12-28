@@ -6,7 +6,7 @@ import Typography from '../../node_modules/@material-ui/core/Typography'
 import IconButton from '../../node_modules/@material-ui/core/IconButton'
 import MenuIcon from '../../node_modules/@material-ui/icons/Menu'
 import Drawer from '../../node_modules/@material-ui/core/Drawer'
-import Menu from '../../node_modules/@material-ui/icons/Menu'
+import Menu from '../components/menu'
 
 const styles = {
   menuButton: {
