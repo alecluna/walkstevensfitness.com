@@ -5,7 +5,6 @@ import PopUpDialogue from '../components/popupdialogue'
 import TextContent from '../components/textcontent'
 import Border from '../components/border'
 import Image from '../components/image'
-import Footer from '../components/footer'
 
 const styles = {
   section: {
@@ -69,7 +68,6 @@ export default class IndexPage extends Component {
             <TextContent text={fillerText} />
           </div>
         </section>
-        <Footer />
       </div>
     )
   }
