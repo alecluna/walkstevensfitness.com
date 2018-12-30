@@ -7,20 +7,18 @@ import Image from '../components/image'
 
 const styles = {
   section: {
-    marginTop: '5%',
+    margin: '5%',
     display: 'flex',
     flexDirection: 'row',
     justifyContent: 'space-around',
-    flexWrap: 'wrap',
-    paddingBottom: '5%'
+    flexWrap: 'wrap'
   },
   imageText: {
-    maxWidth: '80%',
-    marginTop: '5%',
-    textAlign: 'left'
+    maxWidth: '50%',
+    textAlign: 'left',
+    paddingBottom: '20px'
   },
   sectionHeaderText: {
-    marginTop: '5%',
     fontSize: '2em',
     fontWeight: '200'
   }
@@ -43,15 +41,21 @@ export default class IndexPage extends Component {
       <div>
         <PopUpDialogue />
         <Hero text="Welcome to WalkStevenFitness" />
-        <section style={styles.sectionHeaderText}>
+        <section
+          style={{
+            marginTop: '10%',
+            fontSize: '2em',
+            fontWeight: '200'
+          }}
+        >
           <TextContent text="What I Do" />
         </section>
         <Border />
         <section style={styles.section}>
-          <div style={{ maxWidth: '50%' }}>
+          <div style={{ maxWidth: '55%', marginBottom: '5%' }}>
             <Image />
           </div>
-          <div style={styles.imageText}>
+          <div style={styles.imageText} className="textBreakpoint">
             <TextContent text={fillerText} />
           </div>
         </section>
@@ -60,11 +64,11 @@ export default class IndexPage extends Component {
         </section>
         <Border />
         <section style={styles.section}>
-          <div style={{ maxWidth: '50%' }}>
-            <Image />
-          </div>
           <div style={styles.imageText}>
             <TextContent text={fillerText} />
+          </div>
+          <div style={{ maxWidth: '55%' }}>
+            <Image />
           </div>
         </section>
       </div>
