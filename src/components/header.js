@@ -24,7 +24,7 @@ class Header extends React.Component {
   render() {
     return (
       <div>
-        <AppBar position="static" color="white">
+        <AppBar position="static" color="inherit">
           <Toolbar variant="dense">
             <IconButton color="primary" aria-label="Menu">
               <MenuIcon onClick={this.toggleDrawer} />

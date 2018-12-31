@@ -15,9 +15,14 @@ export default class PopUpDialogue extends Component {
   }
 
   componentDidMount() {
-    setTimeout(() => {
+    this.popUp = setTimeout(() => {
       this.setState({ open: true })
     }, 6000)
+  }
+
+  componentWillUnmount() {
+    //fix memory leak, unmount timer
+    clearTimeout(this.popUp)
   }
 
   _handleClose = () => {

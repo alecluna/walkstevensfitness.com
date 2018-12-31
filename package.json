@@ -8,6 +8,7 @@
     "@material-ui/icons": "^2.0.3",
     "gatsby": "^1.9.277",
     "gatsby-link": "^1.6.46",
+    "gatsby-plugin-mailchimp": "^4.0.0",
     "gatsby-plugin-netlify-cms": "^3.0.0-rc.5",
     "gatsby-plugin-react-helmet": "^2.0.11",
     "netlify-cms": "^2.3.1",

@@ -5,7 +5,7 @@ import Border from '../components/border'
 
 const styles = {
   background: {
-    backgroundColor: '#484848',
+    backgroundColor: '#0e1e25',
     height: '40vh',
     display: 'flex',
     justifyContent: 'center',
