@@ -6,12 +6,20 @@ import Border from '../components/border'
 
 const styles = {
   section: {
-    marginTop: '10%',
+    margin: '5%',
     display: 'flex',
-    flexDirection: 'row-reverse',
-    justifyContent: 'center',
-    flexWrap: 'wrap',
-    paddingBottom: '5%'
+    flexDirection: 'row',
+    justifyContent: 'space-around',
+    flexWrap: 'wrap'
+  },
+  imageText: {
+    maxWidth: '50%',
+    textAlign: 'left',
+    paddingBottom: '20px'
+  },
+  sectionHeaderText: {
+    fontSize: '2em',
+    fontWeight: '200'
   }
 }
 
@@ -29,30 +37,25 @@ class Clients extends Component {
       <div>
         <Hero text="Client Testimonials" />
         <section
-          style={{
-            marginTop: '10%',
-            fontSize: '2em',
-            fontWeight: '200'
-          }}
+          style={{ marginTop: '10%', fontSize: '2em', fontWeight: '200' }}
         >
           <TextContent text="What Clients Are Saying" />
         </section>
         <Border />
         <section style={styles.section}>
-          <div style={{ maxWidth: '50%' }}>
+          <div style={{ maxWidth: '55%', marginBottom: '5%' }}>
             <Image />
           </div>
-          <div style={{ maxWidth: '50%', marginTop: '5%', marginRight: '5%' }}>
+          <div style={styles.imageText} className="textBreakpoint">
             <TextContent text="Walker is an amazing trainer, I've progressed extrememly rapidly through his programs - Jake Long" />
           </div>
         </section>
         <Border />
-
         <section style={styles.section}>
-          <div style={{ maxWidth: '50%', marginTop: '5%' }}>
+          <div style={styles.imageText}>
             <TextContent text={fillerText} />
           </div>
-          <div style={{ maxWidth: '50%', marginRight: '5%' }}>
+          <div style={{ maxWidth: '55%' }}>
             <Image />
           </div>
         </section>
