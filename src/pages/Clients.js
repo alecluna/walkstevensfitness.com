@@ -23,14 +23,6 @@ const styles = {
   }
 }
 
-const fillerText = `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad
-minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-aliquip ex ea commodo consequat.Duis aute irure dolor in
-  reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-pariatur.Excepteur sint occaecat cupidatat non proident, sunt in
-  culpa qui officia deserunt mollit anim id est laborum - Ally White`
-
 class Clients extends Component {
   render() {
     return (
@@ -53,7 +45,7 @@ class Clients extends Component {
         <Border />
         <section style={styles.section}>
           <div style={styles.imageText}>
-            <TextContent text={fillerText} />
+            <TextContent text="I am seeing amazing results from the weekly diet plans and the amaaing advice   - Haley" />
           </div>
           <div style={{ maxWidth: '55%' }}>
             <Image />

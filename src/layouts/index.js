@@ -11,6 +11,7 @@ const Layout = ({ children, data }) => (
       <title>{data.site.siteMetadata.title}</title>
       <meta charSet="utf-8" />
       <meta name="viewport" content="width=device-width, user-scalable=no" />
+      <meta name="format-detection" content="telephone=no" />
     </Helmet>
 
     <Header />

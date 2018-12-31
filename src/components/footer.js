@@ -26,7 +26,7 @@ export default function Footer() {
         <div style={{ paddingLeft: '10px' }}>
           <Typography style={{ color: 'white' }}> Contact Me:</Typography>
           <Typography style={{ textDecoration: 'none', color: 'white' }}>
-            916-555-55555
+            559-978-6003
           </Typography>
         </div>
         <div
