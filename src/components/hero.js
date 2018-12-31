@@ -24,7 +24,7 @@ const styles = {
   },
   paperStyle: {
     height: '50%',
-    width: '70%',
+    width: '80%',
     marginTop: '15%'
   }
 }
@@ -36,11 +36,11 @@ const PaperWrapper = styled.div`
 `
 
 const CustomTypography = styled.div`
-  color: black;
-  font-weight: 240;
-  font-size: 1.9em;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
     Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: black;
+  font-weight: 300;
+  font-size: 1.8em;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -73,7 +73,7 @@ export default class Hero extends Component {
       <div style={styles.background}>
         <Paper style={styles.paperStyle} elevation={20}>
           <PaperWrapper>
-            <CustomTypography variant="display4">
+            <CustomTypography>
               {this.props.text}
               <Border />
             </CustomTypography>
