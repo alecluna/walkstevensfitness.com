@@ -1,6 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: 'Walker Stevens Fitness'
+    title: 'Walker Stevens Fitness',
+    description: 'This is where I write my thoughts.'
+
     // description: 'Walker Stevens Presonal Training Fitness Page',
     // author: 'Alec Luna',
     // keywords:

@@ -7,13 +7,12 @@ import './index.css'
 
 const Layout = ({ children, data }) => (
   <div>
-    <Helmet
-      title={data.site.siteMetadata.title}
-      meta={[
-        { name: 'description', content: 'Sample' },
-        { name: 'keywords', content: 'sample, something' }
-      ]}
-    />
+    <Helmet>
+      <title>{data.site.siteMetadata.title}</title>
+      <meta charSet="utf-8" />
+      <meta name="viewport" content="width=device-width, user-scalable=no" />
+    </Helmet>
+
     <Header />
     <div>{children()}</div>
     <Footer />
