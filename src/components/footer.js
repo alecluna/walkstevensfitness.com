@@ -6,7 +6,7 @@ const styles = {
   footerDemensions: {
     height: '120px',
     maxWidth: '100%',
-    backgroundColor: '#282828',
+    backgroundColor: '#0e1e25',
     color: 'white',
     display: 'flex',
     justifyContent: 'space-around',
