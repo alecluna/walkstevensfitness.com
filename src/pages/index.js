@@ -27,6 +27,8 @@ const TextContainer = styled.div`
 
   @media screen and (max-width: 750px) {
     max-width: 75%;
+    margin-top: 5%;
+    margin-bottom: 5%;
   }
 
   @media screen and (min-width: 750px) {
@@ -59,7 +61,7 @@ export default class IndexPage extends Component {
         </section>
         <Border />
         <section style={styles.section}>
-          <div style={{ maxWidth: '55%', marginBottom: '5%' }}>
+          <div style={{ maxWidth: '55%' }}>
             <Image />
           </div>
           <TextContainer>
