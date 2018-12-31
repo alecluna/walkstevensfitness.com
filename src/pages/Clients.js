@@ -3,6 +3,7 @@ import TextContent from '../components/textcontent'
 import Hero from '../components/hero'
 import Image from '../components/image'
 import Border from '../components/border'
+import styled from '../../node_modules/styled-components'
 
 const styles = {
   section: {
@@ -12,16 +13,25 @@ const styles = {
     justifyContent: 'space-around',
     flexWrap: 'wrap'
   },
-  imageText: {
-    maxWidth: '50%',
-    textAlign: 'left',
-    paddingBottom: '20px'
-  },
   sectionHeaderText: {
     fontSize: '2em',
     fontWeight: '200'
   }
 }
+
+const TextContainer = styled.div`
+  max-width: 50%;
+  text-align: left;
+  padding-bottom: 20px;
+
+  @media screen and (max-width: 750px) {
+    max-width: 75%;
+  }
+
+  @media screen and (min-width: 750px) {
+    margin-top: 5%;
+  }
+`
 
 class Clients extends Component {
   render() {
@@ -38,15 +48,15 @@ class Clients extends Component {
           <div style={{ maxWidth: '55%', marginBottom: '5%' }}>
             <Image />
           </div>
-          <div style={styles.imageText} className="textBreakpoint">
+          <TextContainer>
             <TextContent text="Walker is an amazing trainer, I've progressed extrememly rapidly through his programs - Jake Long" />
-          </div>
+          </TextContainer>
         </section>
         <Border />
         <section style={styles.section}>
-          <div style={styles.imageText}>
+          <TextContainer>
             <TextContent text="I am seeing amazing results from the weekly diet plans and the amaaing advice   - Haley" />
-          </div>
+          </TextContainer>
           <div style={{ maxWidth: '55%' }}>
             <Image />
           </div>

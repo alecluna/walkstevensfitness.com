@@ -4,6 +4,7 @@ import PopUpDialogue from '../components/popupdialogue'
 import TextContent from '../components/textcontent'
 import Border from '../components/border'
 import Image from '../components/image'
+import styled from '../../node_modules/styled-components'
 
 const styles = {
   section: {
@@ -13,16 +14,26 @@ const styles = {
     justifyContent: 'space-around',
     flexWrap: 'wrap'
   },
-  imageText: {
-    maxWidth: '50%',
-    textAlign: 'left',
-    paddingBottom: '20px'
-  },
   sectionHeaderText: {
     fontSize: '2em',
     fontWeight: '200'
   }
 }
+
+const TextContainer = styled.div`
+  max-width: 50%;
+  text-align: left;
+  padding-bottom: 20px;
+
+  @media screen and (max-width: 750px) {
+    max-width: 75%;
+  }
+
+  @media screen and (min-width: 750px) {
+    margin-top: 5%;
+  }
+`
+
 const fillerText = `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
 eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad
 minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -42,11 +53,7 @@ export default class IndexPage extends Component {
         <PopUpDialogue />
         <Hero text="Welcome to WalkStevenFitness" />
         <section
-          style={{
-            marginTop: '10%',
-            fontSize: '2em',
-            fontWeight: '200'
-          }}
+          style={{ marginTop: '10%', fontSize: '2em', fontWeight: '200' }}
         >
           <TextContent text="What I Do" />
         </section>
@@ -55,18 +62,18 @@ export default class IndexPage extends Component {
           <div style={{ maxWidth: '55%', marginBottom: '5%' }}>
             <Image />
           </div>
-          <div style={styles.imageText} className="textBreakpoint">
+          <TextContainer>
             <TextContent text={fillerText} />
-          </div>
+          </TextContainer>
         </section>
         <section style={styles.sectionHeaderText}>
           <TextContent text="What I Offer" />
         </section>
         <Border />
         <section style={styles.section}>
-          <div style={styles.imageText}>
+          <TextContainer>
             <TextContent text={fillerText} />
-          </div>
+          </TextContainer>
           <div style={{ maxWidth: '55%' }}>
             <Image />
           </div>
