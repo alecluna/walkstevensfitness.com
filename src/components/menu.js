@@ -63,7 +63,7 @@ export default class Menu extends Component {
           </ListItem>
           <Divider />
           <ListItem button>
-            <Link style={{ textDecoration: 'none' }} to="/howtos">
+            <Link style={{ textDecoration: 'none' }} to="/Howtos">
               <Typography style={styles.boldType}> How To's</Typography>
             </Link>
           </ListItem>
@@ -87,7 +87,7 @@ export default class Menu extends Component {
           <ListItem button>
             <Link
               style={{ textDecoration: 'none', color: 'black' }}
-              to="/courses"
+              to="/Courses"
             >
               <Typography style={styles.boldType}> Plans </Typography>
             </Link>
