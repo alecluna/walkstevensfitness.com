@@ -6,7 +6,7 @@ export default function Image() {
       <img
         className="grow"
         src={'https://picsum.photos/390/390'}
-        alt="Fitness Image"
+        alt="Fitness Card Component"
       />
     </div>
   )

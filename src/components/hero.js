@@ -3,16 +3,6 @@ import Paper from '../../node_modules/@material-ui/core/Paper'
 import Border from '../components/border'
 import styled from '../../node_modules/styled-components'
 
-const device = {
-  mobileS: `(max-device-width < 425px)`,
-  mobileM: `(min-device-width: 375px)`,
-  mobileL: `(min-width: 425px)`,
-  tablet: `(min-width: 768px)`,
-  laptop: `(min-width: 1024px)`,
-  laptopL: `(min-width: 1440px)`,
-  desktop: `(min-width: 2560px)`
-}
-
 const styles = {
   background: {
     backgroundColor: '#0e1e25',
@@ -51,17 +41,17 @@ const CustomTypography = styled.div`
     margin-top: 15%;
   }
   /*small devices portriat */
-  @media ${device.mobileS} {
+  @media only screen and (max-device-width: 400px) {
     margin-top: 15%;
   }
 
   /* iPhone 6 7 & 8 Landscape */
-  @media only screen and ${device.mobileM} and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+  @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
     margin-top: 2%;
   }
 
   /* iPhone X Landscape */
-  @media only screen and ${device.mobileM} and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+  @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
     margin-top: 2%;
   }
 `

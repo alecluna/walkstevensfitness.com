@@ -1,12 +1,11 @@
-import React, { Component } from 'react'
+import React from 'react'
 import Hero from '../../components/hero'
+import Layout from '../../components/layout'
 
-export default class Shoulders extends Component {
-  render() {
-    return (
-      <div>
-        <Hero text="Shoulders" />
-      </div>
-    )
-  }
-}
+const Shoulders = () => (
+  <Layout>
+    <Hero text="Shoulders" />
+  </Layout>
+)
+
+export default Shoulders

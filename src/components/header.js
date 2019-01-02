@@ -8,13 +8,6 @@ import MenuIcon from '../../node_modules/@material-ui/icons/Menu'
 import Drawer from '../../node_modules/@material-ui/core/Drawer'
 import Menu from '../components/menu'
 
-const styles = {
-  menuButton: {
-    marginLeft: -12,
-    marginRight: 20
-  }
-}
-
 class Header extends React.Component {
   state = { open: false }
 

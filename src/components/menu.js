@@ -55,7 +55,7 @@ export default class Menu extends Component {
             </Link>
           </ListItem>
           <ListItem button>
-            <Link style={{ textDecoration: 'none' }} to="/clients">
+            <Link style={{ textDecoration: 'none' }} to="/Clients">
               <Typography style={styles.boldType}>
                 Client Testimonies
               </Typography>

@@ -29,7 +29,7 @@ export default class CardComponent extends Component {
       <div style={styles.card}>
         <Link to={this.props.linkto} style={styles.links}>
           <Card className="grow">
-            <img src={image} alt="Card Image" />
+            <img src={image} alt="Fitness Card Component" />
 
             <CardContent>
               <Typography gutterBottom variant="headline" component="h2">

@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React from 'react'
 import Typography from '../../node_modules/@material-ui/core/Typography'
 
 const TitleComponent = props => (
@@ -9,4 +9,5 @@ const TitleComponent = props => (
     {props.title}
   </Typography>
 )
+
 export default TitleComponent
