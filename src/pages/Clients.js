@@ -4,6 +4,7 @@ import Hero from '../components/hero'
 import Image from '../components/image'
 import Border from '../components/border'
 import styled from '../../node_modules/styled-components'
+import Layout from '../components/layout'
 
 const styles = {
   section: {
@@ -33,37 +34,33 @@ const TextContainer = styled.div`
   }
 `
 
-class Clients extends Component {
-  render() {
-    return (
-      <div>
-        <Hero text="Client Testimonials" />
-        <section
-          style={{ marginTop: '10%', fontSize: '2em', fontWeight: '200' }}
-        >
-          <TextContent text="What Clients Are Saying" />
-        </section>
-        <Border />
-        <section style={styles.section}>
-          <div style={{ maxWidth: '55%', marginBottom: '5%' }}>
-            <Image />
-          </div>
-          <TextContainer>
-            <TextContent text="Walker is an amazing trainer, I've progressed extrememly rapidly through his programs - Jake Long" />
-          </TextContainer>
-        </section>
-        <Border />
-        <section style={styles.section}>
-          <TextContainer>
-            <TextContent text="I am seeing amazing results from the weekly diet plans and the amaaing advice   - Haley" />
-          </TextContainer>
-          <div style={{ maxWidth: '55%' }}>
-            <Image />
-          </div>
-        </section>
-      </div>
-    )
-  }
-}
+const Clients = () => (
+  <Layout>
+    <div>
+      <Hero text="Client Testimonials" />
+      <section style={{ marginTop: '10%', fontSize: '2em', fontWeight: '200' }}>
+        <TextContent text="What Clients Are Saying" />
+      </section>
+      <Border />
+      <section style={styles.section}>
+        <div style={{ maxWidth: '55%', marginBottom: '5%' }}>
+          <Image />
+        </div>
+        <TextContainer>
+          <TextContent text="Walker is an amazing trainer, I've progressed extrememly rapidly through his programs - Jake Long" />
+        </TextContainer>
+      </section>
+      <Border />
+      <section style={styles.section}>
+        <TextContainer>
+          <TextContent text="I am seeing amazing results from the weekly diet plans and the amaaing advice   - Haley" />
+        </TextContainer>
+        <div style={{ maxWidth: '55%' }}>
+          <Image />
+        </div>
+      </section>
+    </div>
+  </Layout>
+)
 
 export default Clients

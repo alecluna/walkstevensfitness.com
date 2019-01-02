@@ -5,6 +5,7 @@ import TextContent from '../components/textcontent'
 import Border from '../components/border'
 import Image from '../components/image'
 import styled from '../../node_modules/styled-components'
+import Layout from '../components/layout'
 
 const styles = {
   section: {
@@ -44,43 +45,35 @@ aliquip ex ea commodo consequat.Duis aute irure dolor in
 pariatur.Excepteur sint occaecat cupidatat non proident, sunt in
   culpa qui officia deserunt mollit anim id est laborum.`
 
-export default class IndexPage extends Component {
-  constructor() {
-    super()
-  }
-
-  render() {
-    return (
-      <div>
-        <PopUpDialogue />
-        <Hero text="Welcome to WalkStevenFitness" />
-        <section
-          style={{ marginTop: '10%', fontSize: '2em', fontWeight: '200' }}
-        >
-          <TextContent text="What I Do" />
-        </section>
-        <Border />
-        <section style={styles.section}>
-          <div style={{ maxWidth: '55%' }}>
-            <Image />
-          </div>
-          <TextContainer>
-            <TextContent text={fillerText} />
-          </TextContainer>
-        </section>
-        <section style={styles.sectionHeaderText}>
-          <TextContent text="What I Offer" />
-        </section>
-        <Border />
-        <section style={styles.section}>
-          <TextContainer>
-            <TextContent text={fillerText} />
-          </TextContainer>
-          <div style={{ maxWidth: '55%' }}>
-            <Image />
-          </div>
-        </section>
+const IndexPage = () => (
+  <Layout>
+    <PopUpDialogue />
+    <Hero text="Welcome to WalkStevenFitness" />
+    <section style={{ marginTop: '10%', fontSize: '2em', fontWeight: '200' }}>
+      <TextContent text="What I Do" />
+    </section>
+    <Border />
+    <section style={styles.section}>
+      <div style={{ maxWidth: '55%' }}>
+        <Image />
       </div>
-    )
-  }
-}
+      <TextContainer>
+        <TextContent text={fillerText} />
+      </TextContainer>
+    </section>
+    <section style={styles.sectionHeaderText}>
+      <TextContent text="What I Offer" />
+    </section>
+    <Border />
+    <section style={styles.section}>
+      <TextContainer>
+        <TextContent text={fillerText} />
+      </TextContainer>
+      <div style={{ maxWidth: '55%' }}>
+        <Image />
+      </div>
+    </section>
+  </Layout>
+)
+
+export default IndexPage

@@ -1,10 +1,11 @@
 import React from 'react'
 import CardComponent from '../components/cardcomponent'
+import Layout from '../components/layout'
 
 const muscleGroups = ['Biceps', 'Triceps', 'Shoulders', 'Core', 'Legs']
 
-export default function ClientHowTos() {
-  return (
+const ClientHowTos = () => (
+  <Layout>
     <div>
       <div
         style={{
@@ -27,5 +28,5 @@ export default function ClientHowTos() {
         })}
       </div>
     </div>
-  )
-}
+  </Layout>
+)

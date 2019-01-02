@@ -3,6 +3,7 @@ import Hero from '../components/hero'
 import TextContent from '../components/textcontent'
 import Border from '../components/border'
 import TrainerHowTo from '../components/trainerhowto'
+import Layout from '../components/layout'
 
 const styles = {
   sectionStyle: {
@@ -20,8 +21,8 @@ aliquip ex ea commodo consequat.Duis aute irure dolor in
 pariatur.Excepteur sint occaecat cupidatat non proident, sunt in
   culpa qui officia deserunt mollit anim id est laborum.`
 
-export default function ForTrainersHowTos() {
-  return (
+const ForTrainersHowTos = () => (
+  <Layout>
     <div>
       <Hero text="For Trainers" />
       <section style={styles.sectionStyle}>
@@ -33,5 +34,7 @@ export default function ForTrainersHowTos() {
       </section>
       <Border />
     </div>
-  )
-}
+  </Layout>
+)
+
+export default ForTrainersHowTos

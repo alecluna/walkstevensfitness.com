@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import Card from '../../node_modules/@material-ui/core/Card'
 import Typography from '../../node_modules/@material-ui/core/Typography'
 import CardContent from '../../node_modules/@material-ui/core/CardContent'
-import Link from 'gatsby-link'
+import { Link } from 'gatsby'
 
 const styles = {
   card: {
@@ -29,7 +29,7 @@ export default class CardComponent extends Component {
       <div style={styles.card}>
         <Link to={this.props.linkto} style={styles.links}>
           <Card className="grow">
-            <img src={image} />
+            <img src={image} alt="Card Image" />
 
             <CardContent>
               <Typography gutterBottom variant="headline" component="h2">

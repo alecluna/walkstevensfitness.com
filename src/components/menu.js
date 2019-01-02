@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import Link from 'gatsby-link'
+import { Link } from 'gatsby'
 import '../layouts/index.css'
 import Typography from '../../node_modules/@material-ui/core/Typography'
 import ListItem from '../../node_modules/@material-ui/core/ListItem'

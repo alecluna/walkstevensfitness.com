@@ -1,5 +1,5 @@
 import React from 'react'
-import Link from 'gatsby-link'
+import { Link } from 'gatsby'
 import AppBar from '../../node_modules/@material-ui/core/AppBar'
 import Toolbar from '../../node_modules/@material-ui/core/Toolbar'
 import Typography from '../../node_modules/@material-ui/core/Typography'
