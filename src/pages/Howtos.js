@@ -23,10 +23,10 @@ const HowTos = () => (
       >
         <CardComponent
           text="For Clients"
-          linkto="/ClientHowTos/"
+          linkto="/ClientHowTos"
           //image={foodImage} TODO add unique image prop
         />
-        <CardComponent text="For Trainers" linkto="/ForTrainersHowTos/" />
+        <CardComponent text="For Trainers" linkto="/ForTrainersHowTos" />
       </div>
     </div>
   </Layout>

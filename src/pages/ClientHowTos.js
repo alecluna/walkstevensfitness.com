@@ -30,3 +30,5 @@ const ClientHowTos = () => (
     </div>
   </Layout>
 )
+
+export default ClientHowTos
