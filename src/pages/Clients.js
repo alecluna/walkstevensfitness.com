@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React from 'react'
 import TextContent from '../components/textcontent'
 import Hero from '../components/hero'
 import Image from '../components/image'

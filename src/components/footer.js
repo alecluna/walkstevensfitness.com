@@ -55,21 +55,19 @@ export default function Footer() {
           </div>
         </div>
       </section>
-      <div
-        style={{
-          textAlign: 'left',
-          backgroundColor: '#202020'
-        }}
-      >
-        <Typography
-          style={{
-            marginLeft: '20px',
-            fontSize: '9px',
-            color: 'white'
-          }}
-        >
-          Created by: Alec Luna
-        </Typography>
+      <div style={{ textAlign: 'left', backgroundColor: '#202020' }}>
+        <a href="https://github.com/alecluna">
+          <Typography
+            style={{
+              textDecoration: 'none',
+              marginLeft: '20px',
+              fontSize: '9px',
+              color: 'white'
+            }}
+          >
+            Created by: Alec Luna
+          </Typography>
+        </a>
       </div>
     </div>
   )

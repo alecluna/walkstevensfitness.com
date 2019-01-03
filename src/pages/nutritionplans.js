@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React from 'react'
 import { Link } from 'gatsby'
 import CardContent from '../../node_modules/@material-ui/core/CardContent'
 import Typography from '../../node_modules/@material-ui/core/Typography'
