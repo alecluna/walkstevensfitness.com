@@ -6,7 +6,7 @@ import Biceps from '../../assets/biceps.jpeg'
 import Core from '../../assets/core.jpeg'
 import Shoulders from '../../assets/shoulders.jpg'
 import Legs from '../../assets/squatStockPhoto.jpeg'
-//import Triceps from '../../assets/triceps.jpeg'
+import Triceps from '../../assets/triceps.jpeg'
 
 const ClientHowTos = () => (
   <Layout>
@@ -42,12 +42,12 @@ const ClientHowTos = () => (
         className="grow"
         image={Legs}
       />
-      {/* <CardComponent
+      <CardComponent
         text="Triceps"
         linkto={`/musclegroups/${Core}/`}
         className="grow"
         image={Triceps}
-      /> */}
+      />
     </div>
   </Layout>
 )
