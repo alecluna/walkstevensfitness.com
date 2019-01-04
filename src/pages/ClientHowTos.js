@@ -3,10 +3,12 @@ import Layout from '../components/layout'
 import CardComponent from '../components/cardcomponent'
 
 import Biceps from '../../assets/biceps.jpeg'
-// import Core from '../../assets/Core.jpeg'
-// import Shoulders from '../../assets/Shoulders.jpg'
-// import Legs from '../../assets/Legs.jpg'
-// import Triceps from '../../assets/Triceps.jpeg'
+import Core from '../../assets/core.jpeg'
+import Shoulders from '../../assets/shoulders.jpg'
+import Legs from '../../assets/legs.jpg'
+import Triceps from '../../assets/triceps.jpeg'
+
+const muscleGroups = ['Biceps', 'Core', 'Shoulders', 'Legs', 'Triceps']
 
 const ClientHowTos = () => (
   <Layout>
@@ -20,29 +22,33 @@ const ClientHowTos = () => (
     >
       <CardComponent
         text="Biceps"
-        linkto="/musclegroups/Biceps/"
+        linkto={`/musclegroups/${Biceps}/`}
         className="grow"
         image={Biceps}
       />
       <CardComponent
         text="Core"
-        linkto="/musclegroups/Core/"
+        linkto={`/musclegroups/${Core}/`}
         className="grow"
+        image={Core}
       />
       <CardComponent
         text="Shoulders"
-        linkto="/musclegroups/Shoulders/"
+        linkto={`/musclegroups/${Core}/`}
         className="grow"
+        image={Shoulders}
       />
       <CardComponent
         text="Legs"
-        linkto="/musclegroups/Legs/"
+        linkto={`/musclegroups/${Core}/`}
         className="grow"
+        image={Legs}
       />
       <CardComponent
         text="Triceps"
-        linkto="/musclegroups/Triceps/"
+        linkto={`/musclegroups/${Core}/`}
         className="grow"
+        image={Triceps}
       />
     </div>
   </Layout>
