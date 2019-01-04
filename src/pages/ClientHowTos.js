@@ -8,26 +8,6 @@ import Shoulders from '../../assets/Shoulders.jpg'
 import Legs from '../../assets/Legs.jpg'
 import Triceps from '../../assets/Triceps.jpeg'
 
-const muscleGroups = [`Biceps`, `Core`, `Shoulders`, `Legs`]
-
-const styles = {
-  card: {
-    maxWidth: 500,
-    alignSelf: 'center',
-    margin: '30px'
-  },
-  title: {
-    marginBottom: 16,
-    fontSize: 14
-  },
-  links: {
-    color: 'black',
-    textDecoration: 'none',
-    fontFamily: 'Roboto',
-    fontSize: '28px'
-  }
-}
-
 const ClientHowTos = () => (
   <Layout>
     <div
