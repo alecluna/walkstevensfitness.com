@@ -4,7 +4,8 @@ import Hero from '../components/hero'
 import CardComponent from '../components/cardcomponent'
 import Border from '../components/border'
 import Layout from '../components/layout'
-import foodImage from '../../assets/foodimage.jpg'
+import clientImage from '../../assets/forClientsStock.jpeg'
+import trainerImage from '../../assets/forTrainersImage.jpeg'
 
 const HowTos = () => (
   <Layout>
@@ -25,9 +26,13 @@ const HowTos = () => (
         <CardComponent
           text="For Clients"
           linkto="/ClientHowTos"
-          image={foodImage}
+          image={clientImage}
         />
-        <CardComponent text="For Trainers" linkto="/ForTrainersHowTos" />
+        <CardComponent
+          text="For Trainers"
+          linkto="/ForTrainersHowTos"
+          image={trainerImage}
+        />
       </div>
     </div>
   </Layout>

@@ -5,6 +5,8 @@ import Image from '../components/image'
 import Border from '../components/border'
 import styled from '../../node_modules/styled-components'
 import Layout from '../components/layout'
+import squatStockPhoto from '../../assets/squatStockPhoto.jpeg'
+import stockFlex from '../../assets/stockFlexAthlete.jpeg'
 
 const styles = {
   section: {
@@ -44,7 +46,7 @@ const Clients = () => (
       <Border />
       <section style={styles.section}>
         <div style={{ maxWidth: '55%', marginBottom: '5%' }}>
-          <Image />
+          <Image image={squatStockPhoto} />
         </div>
         <TextContainer>
           <TextContent text="Walker is an amazing trainer, I've progressed extrememly rapidly through his programs - Jake Long" />
@@ -56,7 +58,7 @@ const Clients = () => (
           <TextContent text="I am seeing amazing results from the weekly diet plans and the amaaing advice   - Haley" />
         </TextContainer>
         <div style={{ maxWidth: '55%' }}>
-          <Image />
+          <Image image={stockFlex} />
         </div>
       </section>
     </div>

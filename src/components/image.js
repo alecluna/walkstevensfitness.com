@@ -1,13 +1,14 @@
 import React from 'react'
 
-export default function Image() {
-  return (
-    <div>
-      <img
-        className="grow"
-        src={'https://picsum.photos/390/390'}
-        alt="Fitness Card Component"
-      />
-    </div>
-  )
-}
+const Image = ({ image }) => (
+  <div>
+    <img
+      style={{ hight: '500px', width: '500px' }}
+      className="grow"
+      src={image}
+      alt="Fitness Card Component"
+    />
+  </div>
+)
+
+export default Image

@@ -6,6 +6,8 @@ import Border from '../components/border'
 import Image from '../components/image'
 import styled from '../../node_modules/styled-components'
 import Layout from '../components/layout'
+import portrait from '../../assets/walkstevensportrait.png'
+import athleteStock from '../../assets/athleteBridgePic.jpeg'
 
 const styles = {
   section: {
@@ -55,7 +57,7 @@ const IndexPage = () => (
     <Border />
     <section style={styles.section}>
       <div style={{ maxWidth: '55%' }}>
-        <Image />
+        <Image image={portrait} />
       </div>
       <TextContainer>
         <TextContent text={fillerText} />
@@ -70,7 +72,7 @@ const IndexPage = () => (
         <TextContent text={fillerText} />
       </TextContainer>
       <div style={{ maxWidth: '55%' }}>
-        <Image />
+        <Image image={athleteStock} />
       </div>
     </section>
   </Layout>
