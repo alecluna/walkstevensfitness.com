@@ -4,6 +4,7 @@ import Hero from '../components/hero'
 import CardComponent from '../components/cardcomponent'
 import Border from '../components/border'
 import Layout from '../components/layout'
+import foodImage from '../../assets/foodimage.jpg'
 
 const HowTos = () => (
   <Layout>
@@ -24,7 +25,7 @@ const HowTos = () => (
         <CardComponent
           text="For Clients"
           linkto="/ClientHowTos"
-          //image={foodImage} TODO add unique image prop
+          image={foodImage}
         />
         <CardComponent text="For Trainers" linkto="/ForTrainersHowTos" />
       </div>

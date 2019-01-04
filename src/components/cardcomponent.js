@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React from 'react'
 import Card from '../../node_modules/@material-ui/core/Card'
 import Typography from '../../node_modules/@material-ui/core/Typography'
 import CardContent from '../../node_modules/@material-ui/core/CardContent'
@@ -21,24 +21,20 @@ const styles = {
     fontSize: '28px'
   }
 }
-const image = 'https://picsum.photos/394/394'
 
-export default class CardComponent extends Component {
-  render() {
-    return (
-      <div style={styles.card}>
-        <Link to={this.props.linkto} style={styles.links}>
-          <Card className="grow">
-            <img src={image} alt="Fitness Card Component" />
+const CardComponent = ({ linkto, image, text }) => (
+  <div style={styles.card}>
+    <Link to={linkto} style={styles.links}>
+      <Card className="grow">
+        <img src={image} alt="Fitness Card Component" />
+        <CardContent>
+          <Typography gutterBottom variant="headline" component="h2">
+            {text}
+          </Typography>
+        </CardContent>
+      </Card>
+    </Link>
+  </div>
+)
 
-            <CardContent>
-              <Typography gutterBottom variant="headline" component="h2">
-                {this.props.text}
-              </Typography>
-            </CardContent>
-          </Card>
-        </Link>
-      </div>
-    )
-  }
-}
+export default CardComponent
