@@ -6,7 +6,7 @@ import Biceps from '../../assets/biceps.jpeg'
 import Core from '../../assets/core.jpeg'
 import Shoulders from '../../assets/shoulders.jpg'
 import Legs from '../../assets/squatStockPhoto.jpeg'
-import Triceps from '../../assets/triceps.jpeg'
+import Triceps from '../../assets/stockFlexAthlete.jpeg'
 
 const ClientHowTos = () => (
   <Layout>
