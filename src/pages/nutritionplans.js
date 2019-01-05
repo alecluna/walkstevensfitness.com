@@ -28,7 +28,7 @@ const Nutritionplans = () => (
         <Paper style={styles.paperStyle} elevation={20}>
           <CardContent>
             <Typography>
-              <Link style={{ textDecoration: 'none' }} to="/courses">
+              <Link style={{ textDecoration: 'none' }} to="/Courses">
                 Go Back
               </Link>
             </Typography>
