@@ -20,31 +20,31 @@ const ClientHowTos = () => (
     >
       <CardComponent
         text="Biceps"
-        linkto={`/musclegroups/${Biceps}/`}
+        linkto={`/${Biceps}/`}
         className="grow"
         image={Biceps}
       />
       <CardComponent
         text="Core"
-        linkto={`/musclegroups/${Core}/`}
+        linkto={`/${Core}/`}
         className="grow"
         image={Core}
       />
       <CardComponent
         text="Shoulders"
-        linkto={`/musclegroups/${Shoulders}/`}
+        linkto={`/${Shoulders}/`}
         className="grow"
         image={Shoulders}
       />
       <CardComponent
         text="Legs"
-        linkto={`/musclegroups/${Legs}/`}
+        linkto={`/${Legs}/`}
         className="grow"
         image={Legs}
       />
       <CardComponent
         text="Triceps"
-        linkto={`/musclegroups/${Triceps}/`}
+        linkto={`/${Triceps}/`}
         className="grow"
         image={Triceps}
       />
