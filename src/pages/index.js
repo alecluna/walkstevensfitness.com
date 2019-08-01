@@ -51,7 +51,7 @@ const IndexPage = () => (
   <Layout>
     <PopUpDialogue />
     <Hero text="Welcome to Custom Fitness Template" />
-    <section style={{ marginTop: '10%', fontSize: '2em', fontWeight: '200' }}>
+    <section style={{ marginTop: '5%', fontSize: '2em', fontWeight: '200' }}>
       <TextContent text="What I Do" />
     </section>
     <Border />
