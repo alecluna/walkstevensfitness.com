@@ -39,7 +39,7 @@ export default function Footer() {
         >
           <div />
           <div>
-            <a href="https://www.instagram.com/walkstevens/ ">
+            <a href="https://www.instagram.com/ ">
               <FaInstagram color="white" size="2em" />
             </a>
           </div>

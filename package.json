@@ -1,6 +1,6 @@
 {
-  "name": "walkerstevensfitness",
-  "description": "walkstevens.com built with gatsby.js",
+  "name": "CustomFitnessTemplate",
+  "description": "built with gatsby.js",
   "version": "1.0.0",
   "author": "Alec Luna",
   "dependencies": {

@@ -40,7 +40,7 @@ class Header extends React.Component {
               }}
             >
               <Link to="/" style={{ color: 'black', textDecoration: 'none' }}>
-                WalkStevensFit
+                Custom Fitness Template
               </Link>
             </Typography>
           </Toolbar>

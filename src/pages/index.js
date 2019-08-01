@@ -6,7 +6,7 @@ import Border from '../components/border'
 import Image from '../components/image'
 import styled from '../../node_modules/styled-components'
 import Layout from '../components/layout'
-import portrait from '../../assets/walkstevensportrait.png'
+import portrait from '../../assets/closeUp.jpg'
 import athleteStock from '../../assets/athleteBridgePic.jpeg'
 
 const styles = {
@@ -25,7 +25,7 @@ const styles = {
 
 const TextContainer = styled.div`
   max-width: 50%;
-  text-align: left;
+  text-align: 'justify';
   padding-bottom: 20px;
 
   @media screen and (max-width: 750px) {
@@ -50,7 +50,7 @@ pariatur.Excepteur sint occaecat cupidatat non proident, sunt in
 const IndexPage = () => (
   <Layout>
     <PopUpDialogue />
-    <Hero text="Welcome to WalkStevenFitness" />
+    <Hero text="Welcome to Custom Fitness Template" />
     <section style={{ marginTop: '10%', fontSize: '2em', fontWeight: '200' }}>
       <TextContent text="What I Do" />
     </section>

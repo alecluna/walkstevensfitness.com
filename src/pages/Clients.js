@@ -49,7 +49,11 @@ const Clients = () => (
           <Image image={squatStockPhoto} />
         </div>
         <TextContainer>
-          <TextContent text="Walker is an amazing trainer, I've progressed extrememly rapidly through his programs - Jake Long" />
+          <TextContent
+            variant="textSecondary"
+            size="3em"
+            text="Joe Trainer is amazing, I've progressed extrememly rapidly through his programs - Jake Long"
+          />
         </TextContainer>
       </section>
       <Border />

@@ -5,7 +5,6 @@ const TextContent = props => (
   <div>
     <Typography
       style={{ textAlign: 'center', fontSize: '1em', fontWeight: '200' }}
-      variant="body2"
     >
       {props.text}
     </Typography>
